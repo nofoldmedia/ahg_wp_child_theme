@@ -1,0 +1,61 @@
+// :: SCSS : Footer
+// @use "../scss-abstracts/_scss-abstract-fonts";
+@use "../scss-abstracts";
+
+
+.template-partial-footer {
+
+  height: auto;
+  z-index: 20;
+  position: relative;
+  background-color: rgb(79, 103, 124);
+  // padding: 4rem 0;
+  padding:0 0;
+  // border: 10px solid yellow;
+
+  &-group {
+
+    // flex-direction: column;
+    // display: flex;
+    // padding: 0;
+
+    flex:1;
+
+  }
+
+  &__body {
+
+    background-color: lightblue;
+    display:flex;
+    flex:1;
+    height: 400px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 2.313rem;
+
+    > * {
+      height: 100%;
+      flex: 1;
+    }
+
+  }
+
+
+  &__footer {
+
+    // background-color: lightblue;
+    // background-color: lightyellow;
+    display:flex;
+    flex:1;
+
+    // > * {
+    //   height: 100%;
+    //   flex: 1;
+    // }
+
+  }
+
+}
+
+
+
+

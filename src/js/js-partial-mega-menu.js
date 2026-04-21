@@ -1,0 +1,542 @@
+
+/**
+ *
+ * :: JQuery for handling the mega menu
+ *
+ * :: This code is for Hide and Show of  the menu items
+ * :: It also controls class 'open' that appears in the element 'template-partial-header__nav-expander'
+ * :: It also controls the Burger menu open and active classes
+ *
+ */
+
+jQuery(document).ready(function ($) {
+    
+    var $window = $(window);
+    var $navExpander = $('.t-p-header__nav-expander');
+    let $primaryMenuList = $('.t-p-header__navigation-primary-list');
+
+    // // Close all sub-menus on page load
+    // $('.t-p-header__navigation-primary-list ul[class^="sub-menu_lvl__"]').hide().removeClass('open');
+
+    // Function to close all sub-menus and remove 'open' class
+    function closeAllSubMenusAndRemoveClass() {
+        $('.t-p-header__navigation-primary-list ul[class^="sub-menu_lvl__"]').hide().removeClass('open');
+        $navExpander.removeClass('open');
+        $primaryMenuList.removeClass('hide');
+        $('.t-p-header__navigation-primary-list .top_lvl_item.open').removeClass('open');
+        $('.t-p-header__form-parent').removeClass('open');
+        $('.t-p-header__navigation-primary-list li.menu-item-has-children').removeClass('open clicked');
+        $('.t-p-header__navigation-primary-list .top_lvl_item').removeClass('not-clicked'); // Clear not-clicked from all items
+    }
+
+    // Function to check if current view is mobile or desktop
+    function isMobile() {
+        return $window.width() <= 1199; // Mobile threshold
+    }
+
+    function menuToggle(){
+
+        if (!isMobile()) { // Only apply mobile-specific behavior
+
+            // alert();
+            document.querySelector('.burger-menu').classList.add('open');
+            document.querySelector('.t-p-header__navigation-primary-list').classList.add('active'); 
+            
+        } else {
+
+            document.querySelector('.burger-menu').classList.remove('open');
+            document.querySelector('.t-p-header__navigation-primary-list').classList.remove('active'); 
+
+        }
+
+    }
+
+    // on page load set the state approriatly
+    menuToggle();
+
+    $window.resize(function () {
+        menuToggle();
+    });    
+
+    // // Handle click for top-level menu items (applies on mobile)
+    // $('.t-p-header__navigation-primary-list .top_lvl_item > a').click(function (e) {
+        
+    //     var $parentItem = $(this).parent('.top_lvl_item');
+
+    //     // Check if the parent item has children
+    //     if ($parentItem.children('ul[class^="sub-menu_lvl__"]').length > 0) {
+    //         e.preventDefault(); // Prevent default action of the link
+
+    //         if (isMobile()) { // Only apply mobile-specific behavior
+    //             if (!$parentItem.hasClass('open')) {
+    //                 closeAllSubMenusAndRemoveClass(); // Close all other sub-menus
+    //                 $parentItem.addClass('open clicked');
+    //                 $primaryMenuList.addClass('hide');
+                    
+    //                 $parentItem.find('ul[class^="sub-menu_lvl__"]').slideDown(200).addClass('open');
+
+    //                 // Add 'not-clicked' class to other top-level items
+    //                 $('.t-p-header__navigation-primary-list .top_lvl_item').not($parentItem).addClass('not-clicked');
+
+    //                 // Inject back link into sub-menu if it doesn't already exist
+    //                 var $submenu = $parentItem.find('ul[class^="sub-menu_lvl__"]');
+    //                 if ($submenu.find('.sub-menu_lvl__back-link').length === 0) { // Check if back link already exists
+    //                     var $backLink = $('<div class="sub-menu_lvl__back-link"><a href="#" style="color: white;">Back to Main Menu</a></div>');
+    //                     $submenu.prepend($backLink); // Insert back link at the top of the sub-menu
+
+    //                     // Handle click on the back link to return to the top-level menu
+    //                     $backLink.click(function (e) {
+    //                         e.preventDefault(); // Prevent default action of the link
+    //                         closeAllSubMenusAndRemoveClass(); // Clear all classes and close the menu
+    //                     });
+    //                 }
+
+    //                 $navExpander.addClass('open');
+    //             } else {
+    //                 // If the parent item is already open, we will close it
+    //                 $parentItem.removeClass('open clicked');
+    //                 $parentItem.find('ul[class^="sub-menu_lvl__"]').slideUp(200).removeClass('open');
+    //                 $('.t-p-header__navigation-primary-list .top_lvl_item').removeClass('not-clicked');
+    //                 closeAllSubMenusAndRemoveClass();
+    //             }
+
+    //             e.stopPropagation(); // Prevent bubbling
+    //         }
+    //     }
+    // });
+
+    // >>>>>>>>>>>>
+    // // Apply hover functionality for desktop only
+    // function handleHoverForDesktop() {
+    //     if (!isMobile()) {
+    //         // Enable hover functionality for desktop
+    //         $('.t-p-header__navigation-primary-list .top_lvl_item').on('mouseenter', function () {
+    //             var $parentItem = $(this);
+    //             clearTimeout($parentItem.data('timeoutId')); // Clear any pending hide timeout
+
+    //             // Show the sub-menu on hover if it's not already open
+    //             if (!$parentItem.hasClass('open')) {
+    //                 closeAllSubMenusAndRemoveClass(); // Close other open sub-menus
+    //                 $parentItem.addClass('open');
+    //                 $parentItem.children('ul[class^="sub-menu_lvl__"]').stop(true, true).slideDown(200).addClass('open');
+    //             }
+    //         }).on('mouseleave', function () {
+    //             var $parentItem = $(this);
+
+    //             // Only close if the user hasn't clicked to open
+    //             if (!$parentItem.hasClass('clicked')) {
+    //                 var timeoutId = setTimeout(function () {
+    //                     $parentItem.removeClass('open');
+    //                     $parentItem.children('ul[class^="sub-menu_lvl__"]').slideUp(200).removeClass('open');
+    //                 }, 300); // Add a delay to allow the user to move to the sub-menu
+    //                 $parentItem.data('timeoutId', timeoutId);
+    //             }
+    //         });
+
+    //         // Handle hover functionality for sub-menus (desktop only)
+    //         $('.t-p-header__navigation-primary-list ul[class^="sub-menu_lvl__"]').on('mouseenter', function () {
+    //             clearTimeout($(this).data('timeoutId')); // Clear any pending hide timeout
+    //         }).on('mouseleave', function () {
+    //             var $submenu = $(this);
+    //             var $parentItem = $submenu.parent('.menu-item-has-children');
+
+    //             // Only close if the menu was not opened by a click
+    //             if (!$parentItem.hasClass('clicked')) {
+    //                 var timeoutId = setTimeout(function () {
+    //                     $parentItem.removeClass('open');
+    //                     $submenu.slideUp(200).removeClass('open');
+    //                 }, 300); // Add a delay to allow the user to move back
+    //                 $submenu.data('timeoutId', timeoutId);
+    //             }
+    //         });
+    //     } else {
+    //         // Disable hover functionality for mobile
+    //         $('.t-p-header__navigation-primary-list .top_lvl_item').off('mouseenter mouseleave');
+    //         $('.t-p-header__navigation-primary-list ul[class^="sub-menu_lvl__"]').off('mouseenter mouseleave');
+    //     }
+    // }
+
+    // // Initial check and bind hover functionality on document ready
+    // handleHoverForDesktop();
+
+    // Re-check on window resize to switch between mobile and desktop behavior
+    // $window.resize(function () {
+    //     handleHoverForDesktop();
+    // });
+    // <<<<<<<<<<<<    
+
+    // // Close sub-menus when clicking outside of the menu on desktop
+    // $(document).click(function () {
+    //     if (!isMobile()) {
+    //         closeAllSubMenusAndRemoveClass();
+    //     }
+    // });
+
+    // Prevent click event from bubbling up to the document when clicking inside the header menu
+    // $('.t-p-header__navigation-primary-group').click(function (e) {
+    //     alert('3');
+    //     e.stopPropagation();
+    // });
+
+    // Click handler for .burger-menu (mobile)
+    $('.burger-menu').click(function (e) {
+        // alert('2');
+        $navExpander.toggleClass('openMobile'); // Toggle open class on nav expander
+        $primaryMenuList.toggleClass('active'); // Toggle active class on primary menu list
+        e.target.classList.toggle('open');
+        // closeAllSubMenusAndRemoveClass(); // Close all sub-menus
+    });
+
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if screen width is greater than 1200px
+    if (window.innerWidth > 0) {
+        // Select all instances of .sub-menu_lvl__1
+        const menus = document.querySelectorAll('.sub-menu_lvl__1');
+
+        menus.forEach(menu => {
+            // Create a new div for the scaffolding container
+            const scaffoldingContainer = document.createElement('div');
+            scaffoldingContainer.classList.add('scaffolding-container');
+            scaffoldingContainer.style.flexDirection = 'row';
+            scaffoldingContainer.style.justifyContent = 'start';
+
+            let currentColumn = document.createElement('div');
+            currentColumn.classList.add('column-break-ul');
+            let firstColumnCreated = false;
+            let newColumns = [];
+
+            Array.from(menu.children).forEach(item => {
+                if (item.classList.contains('break-column')) {
+                    // If we hit a column break and the first column is already created, start a new column
+                    if (firstColumnCreated) {
+                        // Append the current column to the list of new columns
+                        newColumns.push(currentColumn);
+                        // Create a new column and continue
+                        currentColumn = document.createElement('div');
+                        currentColumn.classList.add('column-break-ul');
+                    }
+                    // Add the break-column item to the new column
+                    currentColumn.appendChild(item);
+                    firstColumnCreated = true; // Flag that the first column has been created
+                } else {
+                    // Add item to the current column
+                    currentColumn.appendChild(item);
+                    firstColumnCreated = true; // Flag that the first column has been created
+                }
+            });
+
+            // Add the last created column if it has any items
+            if (currentColumn.children.length > 0) {
+                newColumns.push(currentColumn);
+            }
+
+            // Clear the original menu
+            menu.innerHTML = '';
+
+            // Append the new columns to the scaffolding container
+            newColumns.forEach(column => {
+                scaffoldingContainer.appendChild(column);
+            });
+
+            // Append the scaffolding container back to the menu
+            menu.appendChild(scaffoldingContainer);
+
+        });
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth > 0) {
+        let allTopLevelItems = document.querySelectorAll('.top_lvl_item.menu-item-has-children');
+
+        // console.log(allTopLevelItems);
+
+        allTopLevelItems.forEach(menu => {
+            // Find the anchor (a) tag inside the current top-level item
+            let link = menu.querySelector('a');
+
+            // Find the 'sub_menu_lvl__1' UL within the current menu
+            let subMenu = menu.querySelector('ul.sub-menu_lvl__1');
+
+            // If both the link and submenu exist
+            if (link && subMenu) {
+                // Create a new div element for the cloned parent link
+                let newDiv = document.createElement('div');
+                newDiv.classList.add('parent-link');
+
+                // Clone the a link
+                let clonedLink = link.cloneNode(true);
+
+                // Append the cloned link to the new div
+                newDiv.appendChild(clonedLink);
+
+                // Determine where to append the new div based on the screen size
+                if (window.innerWidth > 1200) {
+                    // If above 1200px, append to the scaffolding-container
+                    let scaffoldingContainer = subMenu.querySelector('.scaffolding-container');
+                    if (scaffoldingContainer) {
+                        scaffoldingContainer.appendChild(newDiv);
+                    } else {
+                        // If scaffolding container doesn't exist, fallback to appending directly to sub-menu
+                        subMenu.appendChild(newDiv);
+                    }
+                } else {
+                    // If below 1200px, append directly to sub-menu_lvl__1
+                    subMenu.appendChild(newDiv);
+                }
+            }
+        });
+    }
+});
+
+
+// // Function for Main Menu Title
+// function handleMainMenuTitle() {
+//     // console.log("Running handleMainMenuTitle...");
+
+//     let mainMenu = document.querySelector('.t-p-header__navigation-primary-list');
+//     // console.log("Found mainMenu:", mainMenu);
+
+//     if (window.innerWidth < 1200) {
+
+//     } else {
+        
+//         // console.log("Window width >= 1200. Checking if '.main-menu-title' exists...");
+//         let existingTitle = mainMenu.querySelector('.main-menu-title');
+
+//         if (existingTitle) {
+//             // console.log("Removing '.main-menu-title' from the main menu.");
+//             mainMenu.removeChild(existingTitle);
+//         } else {
+//             // console.log("'.main-menu-title' does not exist.");
+//         }
+//     }
+// }
+
+// // Function for Contact Email Section
+// function handleContactEmail() {
+//     // console.log("Running handleContactEmail...");
+
+//     let mainMenu = document.querySelector('.t-p-header__navigation-primary-list');
+//     let contactCta = document.querySelector('.t-p-header__top-bar__cta_text');
+//     // console.log("Found mainMenu:", mainMenu);
+//     // console.log("Found contactCta:", contactCta);
+
+//     let contactEmail = '<div class="contact-email"><a href="/contact-us"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/></svg></span><span>Contact us</span></a></div>';
+
+//     if (window.innerWidth < 1200) {
+//         // console.log("Window width < 1200. Checking for '.main-menu-bottom'...");
+//         if (mainMenu && contactCta && !mainMenu.querySelector('.main-menu-bottom')) {
+//             // console.log("Adding '.main-menu-bottom' to the main menu.");
+//             let newDiv = document.createElement('div');
+//             newDiv.classList.add('main-menu-bottom');
+//             newDiv.innerHTML = contactEmail;
+//             newDiv.appendChild(contactCta.cloneNode(true)); // Clone the contact CTA
+
+//             mainMenu.appendChild(newDiv);
+//         } else {
+//             // console.log("'.main-menu-bottom' already exists or required elements are missing.");
+//         }
+//     } else {
+//         // console.log("Window width >= 1200. Checking if '.main-menu-bottom' exists...");
+//         let existingContactDiv = mainMenu.querySelector('.main-menu-bottom');
+//         if (existingContactDiv) {
+//             // console.log("Removing '.main-menu-bottom' from the main menu.");
+//             mainMenu.removeChild(existingContactDiv);
+//         } else {
+//             // console.log("'.main-menu-bottom' does not exist.");
+//         }
+//     }
+// }
+
+// function handleSearchToggle() {
+//     // console.log("Running handleSearchToggle...");
+
+//     // Function to initialize the toggle behavior
+//     function initializeToggle() {
+//         const buttonTriggerSearch = document.querySelector('.main-menu-title');
+//         const contactCta = document.querySelector('.t-p-header__navigation-primary-list');
+//         const contactCtaParent = document.querySelector('.t-p-header__group');
+//         const burgerMenuCTA = document.querySelector('.burger-menu');
+
+//         // console.log("Re-querying buttonTriggerSearch:", buttonTriggerSearch);
+//         // console.log("Re-querying contactCta:", contactCta);
+
+//         if (!buttonTriggerSearch || !contactCta) {
+//             // console.log("Required elements not found. Exiting initializeToggle.");
+//             return;
+//         }
+
+//         // Clear any existing listener to avoid duplication
+//         buttonTriggerSearch.removeEventListener('click', toggleContactCta);
+
+//         // Add the listener only if the window size is <= 1199px
+//         if (window.innerWidth <= 1199) {
+//             // console.log("Window width <= 1199. Adding click event listener to buttonTriggerSearch.");
+//             buttonTriggerSearch.addEventListener('click', toggleContactCta);
+//         } else {
+//             // console.log("Window width > 1199. Removing 'open' class from contactCta.");
+//             contactCta.classList.remove('open'); // Ensure state is cleared
+//             contactCtaParent.classList.remove('open');
+//             burgerMenuCTA.classList.remove('open');
+//         }
+
+//         // Function to toggle the 'open' class
+//         function toggleContactCta(event) {
+//             alert('1');
+//             // console.log("toggleContactCta triggered.");
+//             event.stopPropagation(); // Prevent bubbling
+
+//             // console.log("Before toggle, contactCta class list:", contactCta.classList);
+//             if (contactCta.classList.contains('open')) {
+//                 // console.log("Removing 'open' class.");
+//                 contactCta.classList.remove('open');
+//                 contactCtaParent.classList.remove('open');
+//                 burgerMenuCTA.classList.remove('open');
+
+//             } else {
+//                 // console.log("Adding 'open' class.");
+//                 contactCta.classList.add('open');
+//                 contactCtaParent.classList.add('open');
+//                 burgerMenuCTA.classList.add('open');
+//             }
+//             // console.log("After toggle, contactCta class list:", contactCta.classList);
+//         }
+//     }
+
+//     // Initialize on load
+//     initializeToggle();
+
+//     // Reinitialize on resize
+//     window.addEventListener('resize', () => {
+//         // console.log("Window resized. Re-initializing toggle...");
+//         // initializeToggle();
+//     });
+// }
+
+// // Initial Call
+// document.addEventListener('DOMContentLoaded', function () {
+//     // console.log("DOM fully loaded. Running initial setup...");
+//     handleSearchToggle();
+// });
+
+
+// // Initial Call
+// document.addEventListener('DOMContentLoaded', function () {
+//     // console.log("DOM fully loaded. Running initial setup...");
+//     handleMainMenuTitle();
+//     handleContactEmail();
+//     handleSearchToggle();
+// });
+
+// Resize Event Listener
+window.addEventListener('resize', function () {
+    // console.log("Window resized. Re-running setup...");
+    // handleMainMenuTitle();
+    // handleContactEmail();
+    // handleSearchToggle();
+});
+
+
+// >>>>>>>> body scroll position - not best solution
+// document.addEventListener('DOMContentLoaded', function() {
+
+//     // Check if viewport is 1200px or less
+//     if (window.innerWidth < 1200) {
+      
+//       // Select the target element you want to observe
+//       const menuElement = document.querySelector('.t-p-header__group');
+  
+//       // Check if the element exists
+//       if (menuElement) {
+        
+//         // Function to handle open and close states
+//         function toggleBodyScroll(isOpen) {
+//           if (isOpen) {
+//             document.body.style.overflow = 'hidden';
+//             // console.log('The menu is open!');
+//           } else {
+//             document.body.style.overflow = '';
+//             // console.log('The menu is closed!');
+//           }
+//         }
+  
+//         // Set initial state based on the current menu state
+//         toggleBodyScroll(menuElement.classList.contains('open'));
+  
+//         // Create a new MutationObserver to watch for attribute changes
+//         const observer = new MutationObserver(mutations => {
+//           mutations.forEach(mutation => {
+//             if (mutation.attributeName === 'class') {
+//               const isOpen = menuElement.classList.contains('open');
+//               toggleBodyScroll(isOpen);
+//             }
+//           });
+//         });
+  
+//         // Start observing the menu element for attribute changes
+//         observer.observe(menuElement, { attributes: true });
+  
+//       } else {
+//         // console.log('Menu element not found.');
+//       }
+//     }
+    
+//   });
+
+
+// jQuery(function ($) {
+//   var TARGET_LI  = '#menu-item-738';
+//   var BTN_CLASS  = 't-p-acf-t2-ct-button-group__button-modal';
+//   var POST_ID    = '698';
+//   var targetHref = null;
+
+//   function decorate($a) {
+//     if (!$a.length || $a.data('modalDecorated') === true) return;
+
+//     if (!targetHref) targetHref = $a.attr('href') || '';
+
+//     $a.addClass(BTN_CLASS)
+//       .attr('data-modal-link-post-id', POST_ID)
+//       .attr('aria-haspopup', 'dialog')
+//       .on('click.modalPrevent', function (e) {
+//         // prevent the navigation; allow your existing modal listener to handle opening
+//         e.preventDefault();
+//       });
+
+//     $a.data('modalDecorated', true);
+//   }
+
+//   function scan(root) {
+//     var $root = root ? $(root) : $(document);
+
+//     // Original menu item
+//     var $orig = $root.find(TARGET_LI + ' > a');
+//     if ($orig.length) decorate($orig);
+
+//     // Any clones that reuse the same href (e.g., moved into mobile columns)
+//     if (targetHref) {
+//       $root.find('a[href="' + targetHref + '"]').each(function () {
+//         decorate($(this));
+//       });
+//     }
+//   }
+
+//   // Initial pass
+//   scan();
+
+//   // Watch for dynamically inserted clones/menus
+//   var obs = new MutationObserver(function (mutations) {
+//     mutations.forEach(function (m) {
+//       if (!m.addedNodes) return;
+//       m.addedNodes.forEach(function (n) {
+//         if (n.nodeType === 1) scan(n);
+//       });
+//     });
+//   });
+//   obs.observe(document.body, { childList: true, subtree: true });
+// });

@@ -1,0 +1,3040 @@
+{
+    "key": "group_6655ae8fc6e35",
+    "title": "Template Agreement for the Supply of Services",
+    "fields": [
+        {
+            "key": "field_6655ae8feb66a",
+            "label": "Page 1",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655af0832183",
+            "label": "Please rename the document",
+            "name": "please_rename_the_doc",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6655aed1eb66b",
+            "label": "Page 2",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655af2b6ac08",
+            "label": "Please fill out the company name for the document",
+            "name": "input_company_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6655aed3eb66c",
+            "label": "Page 3",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655bcf7eb011",
+            "label": "Enter the date this agreement was created on",
+            "name": "date_first",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_6655aed6eb66d",
+            "label": "Page 4",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655bd7c2d253",
+            "label": "Enter your company registration number",
+            "name": "company_reg_number",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6655bd952d254",
+            "label": "Page 5",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655bd9b2d255",
+            "label": "Enter your company registered address",
+            "name": "company_address",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6655bdc7fed63",
+            "label": "Page 6",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655bdcefed64",
+            "label": "Enter the customer's company name",
+            "name": "cust_company_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6655bde8fed65",
+            "label": "Page 7",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655bdf0fed66",
+            "label": "Enter the customer's company registration number",
+            "name": "cust_company_reg_number",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6655be17fed67",
+            "label": "Page 8",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655be21fed68",
+            "label": "Enter the customer's company registered address",
+            "name": "cust_company_address",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6655be6422d51",
+            "label": "Page 9",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655be4f22d50",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This section sets out what specific terms mean in this agreement.  \r\n\r\nWhere a term is capitalised throughout this agreement, it has the meaning given to it in this clause.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6655be7e78b9b",
+            "label": "Page 10",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655be8378b9c",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "The order form is generally the commercial document which is provided to the customer which specifies what they have purchased from you and the fees payable. You can change how this is described to reflect your internal processes.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6655beb778b9e",
+            "label": "Page 11",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655be9078b9d",
+            "label": "How do you describe the document you use whereby a customer places an order for services?",
+            "name": "amend_order_form",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "Order Form",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6655bf8479a42",
+            "label": "Page 12",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655bf7379a41",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This definition confirms the services you supply are as described in the schedule. \r\n\r\nHowever, you will likely provide more details about the specifics of the services you will offer in the Order Form (or similar document).",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6655bfc456c37",
+            "label": "Page 13",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655bf9a56c36",
+            "label": "Enter description of the services to be supplied here",
+            "name": "services_supplied",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_6655c067cecda",
+            "label": "Page 14",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655c06dcecdb",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause sets out how long the agreement will last and how it can be terminated for convenience by either party.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6655c1b063bf8",
+            "label": "Page 15",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655c1b963bf9",
+            "label": "When will the agreement begin?",
+            "name": "agreement_start_date",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "one": "On the date it is signed",
+                "two": "On another date"
+            },
+            "default_value": "one",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6655c25c63bfa",
+            "label": "Enter agreement start date",
+            "name": "date_entry",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6655c1b963bf9",
+                        "operator": "==",
+                        "value": "two"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_6655c2ce60ab5",
+            "label": "Page 16",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6655c2ca60ab4",
+            "label": "Will the agreement have a fixed initial term?",
+            "name": "initial_fixed_term",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "no",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6655c32060ab6",
+            "label": "How long is the initial term?",
+            "name": "initial_term_length",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6655c2ca60ab4",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "12 months",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6656e287f6b10",
+            "label": "Page 17",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656e2dc90810",
+            "label": "After the initial term will the contract renew for a further fixed period?",
+            "name": "initial_term_renew",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6655c2ca60ab4",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "yes",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6656e291f6b11",
+            "label": "Enter renewal period",
+            "name": "renew_period",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6656e2dc90810",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "12 months",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6656ecbaa3492",
+            "label": "Page 18",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656ecdba3493",
+            "label": "How much notice will be given to end the contract <br><br><em>(note, if there is an initial period, you should consider the duration of the initial period in deciding what the notice period will be, for example, if the initial period is 12 months, then a notice period of 3 months is sensible, but if the initial period is 1 month, then a notice period of 30 days is sensible)<\/em>",
+            "name": "contract_notice_period",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "30 days",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6656f1a7ee9a7",
+            "label": "Page 19",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f1b5ee9a9",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause sets out how you will provide the services to your customers, in general terms.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f1adee9a8",
+            "label": "Page 20",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f1d553454",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This confirms you will act diligently and professionally when providing services to your customer.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f1fee472b",
+            "label": "Page 21",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f203e472c",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause confirms that you will try and meet any timings agreed with the customer, but you do not guarantee you will meet those timings. \r\n\r\nThis clause is included as it is difficult to guarantee timings, particularly if you are reliant on third parties (such as delivery companies etc).",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f23ee472d",
+            "label": "Page 22",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f249e472e",
+            "label": "Do you want to include this clause?",
+            "name": "clause_3_2",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "yes",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6656f2f0377ec",
+            "label": "Page 23",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f2f5377ed",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "Sometimes changes in the law affect how you can provide some services to customers.  \r\n\r\nThis clause gives you flexibility to change how services are supplied, if this is necessary because of changes in the law. Changes to data protection law is a good example of this.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f31b9bcab",
+            "label": "Page 24",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f3229bcac",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause confirms that a relationship manager will be appointed for the customer.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f32d9bcad",
+            "label": "Page 25",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f3379bcae",
+            "label": "Do you appoint relationship managers for your customers?",
+            "name": "relationship_mgrs",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "yes",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6656f44750d0a",
+            "label": "Page 26",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f46250d0c",
+            "label": "Will you need to have access to the customer’s premises to supply the services?",
+            "name": "customer_premises",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "yes",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6656f63cd619e",
+            "label": "Page 27",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f67ff178e",
+            "label": "Is it likely the customer will need to have any licences in place (for example, software licences) for you to supply the services?",
+            "name": "licences_needed",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "yes",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6656f735f178f",
+            "label": "Page 28",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f73cf1790",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause sets out the things the customer needs to do when working with you. This includes: <br>\r\nProviding you with the information you need to supply the services;\r\nGranting you access to their offices and staff (if necessary) so you can perform the services (provided you comply with their health and safety and security policies);\r\nMaking sure they have all licences and consents needed (for example software licences) for you to supply the services;\r\n Complying with all relevant laws; \r\nMaking sure they look after your equipment if you leave it on their premises (for example, if your staff are working at your customer’s offices, and leave their laptops at the customer’s premises whilst they go for lunch).",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f78433b05",
+            "label": "Page 29",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f78b33b06",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This is a very useful clause.  It is unlikely you will ever need to enforce it against a customer, but if a customer is not cooperating with you (for example they are not providing you with information you need to provide the services) then:\r\nYou will not be at fault if you cannot perform the services because you have not been given the information you need;\r\nYou will not be liable to the customer for any delays to the services; and\r\nYou will not be responsible for any of the costs or losses the customer incurs as a result of the delay; and\r\nThe customer has to reimburse you for any losses you suffer because of the customer's failure (for example, if you have lined up a team of people to providce services to a customer, but they cannot work because the customer has not supplied you with the information you need, then if you cannot redeploy that team of people, you can charge the customer for their wasted time).",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f79f33b07",
+            "label": "Page 30",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f7a533b08",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "It is a good clause to mention to a customer if you find they are not working with you as you need them to.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f7e01b75f",
+            "label": "Page 31",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f7e51b760",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "The Order Form (or similar document) will set out how much the customer needs to pay for the services, together with information on when they will be invoiced.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f807052d3",
+            "label": "Page 32",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f80c052d4",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This notifies the customer of your payment terms.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f85c052d6",
+            "label": "Page 33",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f817052d5",
+            "label": "What are your payment terms:",
+            "name": "payment_terms",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "30 days",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6656f861052d7",
+            "label": "Page 34",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f869052d8",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "If a customer doesn’t pay you in time, you can either suspend supply or you can terminate the contract for material breach. It is a good idea to give the customer notice before you suspend supplying services to them.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f87de71ff",
+            "label": "Page 35",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f883e7200",
+            "label": "How much notice do you want to give the customer to pay you, before you can suspend supplying the services:",
+            "name": "non_payment_notice",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": 10,
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6656f8e2a5e00",
+            "label": "Page 36",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f8e8a5e01",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause reflects your statutory right to charge a customer interest on overdue invoices.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656f8feea706",
+            "label": "Page 37",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656f904ea707",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause acknowledges that you or your licensor own any  intellectual property rights which might relates to the services you supply to the customer.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656fa37ea708",
+            "label": "Page 38",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656fa3dea709",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause is a standard data protection clause. It is important to understand if you are a controller of your customer’s personal data or a processor.  If you are not sure, the Information Commissioner’s website is a good place to find out the information you need to make the decision.  If you are not a processor, most of this clause can be removed. If you are a processor of personal data on behalf of your customer, this clause sets out what you must do as the processor.  \r\n\r\nThe table in the Annex will also need to be populated with the relevant information.  This is quite a specialist area, and if you are unsure, it is a good idea to take specialist advice.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656fa5c5b15a",
+            "label": "Page 39",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656fa635b15b",
+            "label": "Are you a data processor?",
+            "name": "data_processor",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "Yes",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6656fbc7bc411",
+            "label": "Page 40",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656fbd1bc412",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6656fa635b15b",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "If you wish to transfer personal data outside the UK and EEA, then there are certain restrictions you must comply with.  Clause 7.4.2 below sets those out.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656fc790bb04",
+            "label": "Page 41",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656fc8d0bb05",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6656fa635b15b",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "If you use any subcontractors or third parties to provide services on your behalf to your customers, and such subcontractors \/ third parties will handle your customer’s personal data, then the law requires you to notify your customer about this and to have a contract in place with that subcontractor \/ third party setting out the appropriate data protection provisions (similar to the ones contained in this clause). \r\n\r\nYou will always be responsible for the actions of that third party \/ subcontractor as you have the direct relationship with them (not the customer).",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656fcbeb701f",
+            "label": "Page 42",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656fcc3b7020",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6656fa635b15b",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This is a reciprocal confidentiality clause and protects any confidential information either party discloses to the other.  This won’t cover any information which is becomes public knowledge (other than due to a breach of this clause); was already known to the other party; or which was given to the other party by someone else.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656fcdab7021",
+            "label": "Page 43",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656fcdfb7022",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6656fa635b15b",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause sets out how long the confidentiality clause will remain in place.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6656fdaaf2eee",
+            "label": "Page 44",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656fdd2f2eef",
+            "label": "How long would you like the confidentiality obligations last?  It is usual for the obligations of confidentiality to run as long as the contract is in place and for a period thereafter.",
+            "name": "confidentiality_terms",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "one": "Forever <br>",
+                "two": "2 years after termination<br>",
+                "three": "5 years after termination<br>",
+                "four": "10 years after termination"
+            },
+            "default_value": "two",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6656fed638336",
+            "label": "Page 45",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6656fedc38337",
+            "label": "Do you want the ability to publicise your relationship with the customer?",
+            "name": "publicise_relationship",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "yes",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6656ffca38338",
+            "label": "Will you obtain the customer’s consent first?",
+            "name": "customer_consent",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6656fedc38337",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "yes",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_665703a150b17",
+            "label": "Page 46",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665703b050b18",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "The limitation of liability is very important, and is a key clause in protecting you against significant litigation claims.  The law allows you to limit your liability to a reasonable level.  You cannot exclude your liability for death or personal injury caused by your negligence, or for fraud.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_665703ec3df79",
+            "label": "Page 47",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665703f13df7a",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "It is sensible to exclude liability for indirect and consequential losses; these are losses which are considered to be remote from, and not directly linked, to the cause of the claim.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_665703fa3df7b",
+            "label": "Page 48",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665704063df7c",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "It is also sensible to cap your liability, which the law allows you to do provided the cap is reasonable.  This clause is drafted so the liability cap is mutual, which means both parties' liability is capped.  \r\n\r\nHowever, the customer's responsibility to pay fees due to you is not part of the cap.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6657042fbeec5",
+            "label": "Page 49",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570434beec6",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This is the clause which limits your liability for the losses a customer can claim from you.  A sensible starting point for a liability cap is the value of the contract over one year.  If you insert a cap which is considered unreasonably low, then the law will determine it is not enforceable and the cap will be void.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6657044abeec7",
+            "label": "Page 50",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570454beec8",
+            "label": "What cap would you like?",
+            "name": "liability_cap",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "one": "12 months fees (default)",
+                "two": "24 months fees",
+                "three": "Specific figure [£]"
+            },
+            "default_value": "one",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_66570499beec9",
+            "label": "Enter specific figure <br><em>please note our comments about ensuring this is a reasonable figure<\/em>",
+            "name": "cap_amount",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66570454beec8",
+                        "operator": "==",
+                        "value": "three"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_665706b211d98",
+            "label": "Page 51",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665706ba11d99",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause  permits either party to end the contract because the other has committed a serious breach of its terms (and not resolved that breach within 30 days, if the breach can be resolved).  It also allows a party to terminate if the other becomes insolvent or it reasonably believes the other is about to become insolvent or cease trading.  If these terms are used for a one off purchase, the contract will come to an end once you have completed delivery \/ performance of the products and services.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_665706e3734c7",
+            "label": "Page 52",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665706e9734c8",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "When the contract ends you will stop providing services to the customer and the customer has to pay all fees due to you.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_665706fc734c9",
+            "label": "Page 53",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570701734ca",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "Certain clauses in contracts will continue to have effect, even after the contract has ended. These include clauses such as the confidentiality clause, the data protection clause and the liability clause.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6657078f62d23",
+            "label": "Page 54",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6657079462d24",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause is also referred to as a ‘Force Majeure’ clause.  I\r\n\r\nt means that if something happens to your business which is entirely outside of your control which prevents you fulfilling your contractual obligations, then you will have a grace period to resolve the issue and perform your contractual duties.  \r\n\r\nFor example, if your business was flooded and this prevented you from fulfilling certain orders, this clause means you would not be in breach of your contractual responsibilities.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_665707bc62d25",
+            "label": "Page 55",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665707c162d26",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "However, you are still required to tell the customers who have been impacted by this that the flood has occurred, how long you think it will take to clear up the flood damage \/ get alternative production premises in place and what you are doing to resolve the problem.  \r\n\r\nThis is referred to as your ‘duty to mitigate’.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_665707ed5aa5f",
+            "label": "Page 56",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665707f35aa60",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause explains what happens if one party wants to transfer the contract to another party (for example, if a company sells its assets to another company, it might need to transfer this contract to the buyer).",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_66570819ebdc3",
+            "label": "Page 57",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_6657081febdc4",
+            "label": "What is your preference?",
+            "name": "transfer_contract",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "one": "Either party can transfer the contract to someone else, provided they get the other party’s consent (default). <br>",
+                "two": "Either party can transfer the contract to someone else by notifying the other in writing.  Provided the other party does not object to the transfer within one week of receiving the other’s notice, the transfer can take effect. <br>",
+                "three": "You have the right to transfer the contract to another party but the customer does not."
+            },
+            "default_value": "one",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_665709a1ef303",
+            "label": "Page 58",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665709a6ef304",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "By law you need to ensure you comply with anti-bribery statutes and modern slavery laws.  Sophisticated customers like to see contractual provisions confirming both parties will comply with these laws.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_665709c322ee0",
+            "label": "Page 59",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665709cb22ee1",
+            "label": "Would you like to keep these clauses confirming both parties will comply with these specific laws?  <br>If you are unsure, we suggest keeping the clause.",
+            "name": "abms",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "yes",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_66570af66a550",
+            "label": "Page 60",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570b026a552",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "If this contract was the subject of a dispute, and a court found that a provision in the contract was not legal, then this clause allows the offending provision to be removed from the contract, but all the other provisions in the contract would still remain in place.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_66570b2d77d07",
+            "label": "Page 61",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570b3777d08",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This is referred to as a waiver clause and can be very helpful. If you have a contract in place and the other party breaches its terms (for example they take 90 days to pay you instead of 30 days), but you decide not to take action against them for late payment, this does not mean the other party can continue to pay late.  If they repeatedly paid you late, this clause says that you can take action against them, even if you allowed them to pay late previously.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_66570b4c77d09",
+            "label": "Page 62",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570b5377d0a",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "Unless someone is party to an agreement, they cannot enforce the terms of the contract.  This clause makes this clear.  Sometimes a third party is given rights under the contract (for example, if the contract can be transferred to another party, then the party to which the contract is transferred would have rights to enforce the terms of the contract). This position is reflected in this clause.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_66570b6c00db1",
+            "label": "Page 63",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570b7200db2",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause is very important and states that only the clauses which are contained in the contract, together with any documents which are specifically referenced in the contract, are legally binding on the parties.  This means if commercial terms are agreed separately by email between the parties, those commercial terms won’t apply unless they are included in the contract or expressly referenced.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_66570b8700db3",
+            "label": "Page 64",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570b8e00db4",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "Some clauses in a contract are intended to still apply after a contract has ended.  This includes clauses such as the confidentiality clause. The purpose of this clause is to make clear that where it is intended that a particular clause will still apply after the contract has ended, that this will be the case.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_66570ba3c1403",
+            "label": "Page 65",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570baac1404",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause states that no party can change the terms of the contract unless this is agreed in writing with the other party.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_66570be43fabe",
+            "label": "Page 66",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570bf93fabf",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause requires parties to try and resolve a contract dispute between themselves, or using mediation, before they start bringing claims against each other in the courts.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_66570c110e149",
+            "label": "Page 67",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570c180e14a",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "The terms partnership and agency have very specific legal meanings, and certain laws apply to such relationships.  This clause is included to be clear that no such relationship is being created by the contract.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_66570c2b0e14b",
+            "label": "Page 68",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_66570c310e14c",
+            "label": "Comment",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "This clause informs parties how a formal notification (such as notice to terminate the contract) should be issued by one party to the other.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_665d8d537f115",
+            "label": "Page 69",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665d8cf50acb7",
+            "label": "This section refers to the types of personal data you might process, so might include someone’s name, address, email, phone number.",
+            "name": "data_processing",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_665d8d5b7f116",
+            "label": "Page 70",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665d8db6c055a",
+            "label": "This section refers to the categories of data you might process.",
+            "name": "data_categories",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_665d8d617f117",
+            "label": "Page 71",
+            "name": "",
+            "aria-label": "",
+            "type": "page",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": true,
+            "show_numbering": 1,
+            "previous_text": "back",
+            "next_text": "next"
+        },
+        {
+            "key": "field_665d8d6a7f118",
+            "label": "Submitting this will spend one of your credits so please double check your document to ensure all of the details are correct before proceeding",
+            "name": "f__boolean",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "message": "Tick to confirm you have checked document",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "af_form",
+                "operator": "==",
+                "value": "form_6655acc1f0500"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1717410259
+}

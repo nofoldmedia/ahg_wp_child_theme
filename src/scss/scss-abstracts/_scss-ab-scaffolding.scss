@@ -1,0 +1,97 @@
+@use "../scss-mixins";
+
+section {
+
+    position: relative;
+
+}
+
+
+.scaffolding {
+
+    &-container {
+
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        max-width: 100%;
+        align-items: center;
+
+    }
+
+    &-row {
+
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    &-columns {
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 0rem;
+        width: 100%;
+
+        @include  scss-mixins.for-size(desktop-up) {
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 3rem;
+
+        }  
+        
+        &--four-images{
+
+            row-gap: 0;
+            flex-wrap: wrap;
+            flex: 1;
+
+        }
+    
+    }
+
+    &-column {
+
+        box-sizing: border-box;
+
+    }           
+
+}
+
+[class*="section-5050__image-text"] {
+
+    .scaffolding-columns {
+
+        flex-direction: column-reverse;
+
+        @include  scss-mixins.for-size(desktop-up) {
+
+            flex-direction: row;           
+
+        }
+    }
+}
+
+#section-5050__image-text--verbo{
+
+    .scaffolding-columns {
+
+        flex-direction: column;   
+
+        @include  scss-mixins.for-size(desktop-up) {
+
+            flex-direction: row;   
+
+        }
+
+    }
+
+    .tp-sp-section-column-content__bgd{
+
+        background-size: 75% !important;
+
+    }
+}
+

@@ -1,0 +1,169 @@
+// :: SCSS : Header
+@use "../scss-mixins";
+@use "../scss-abstracts";
+
+.t-p-header {
+
+  &__menu-open {
+
+    &:before {
+
+      content: "";
+      width: 100%;
+      height: 414px;
+      position: absolute;
+      left: 0;
+      top: 130px;
+      background-image: url(../images/bgd-hero-xl.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #01122f;
+
+    }
+
+  }
+
+  &__navigation-primary {
+
+    position: absolute;
+    top: 0;
+    margin-top: 77px;
+    margin-left: auto;
+
+    @include scss-mixins.for-size(tablet-landscape-up--larger) {
+
+      position: relative;
+      top: initial;
+      margin-top: initial;
+
+    }
+
+    &-list {
+
+      display: flex;
+      opacity: 0;
+      overflow: hidden;
+      transition: opacity .5s;
+      flex-direction: column;      
+      // background: #1d1d1b;
+      // background: red;
+      position: absolute;
+      top: 0;
+      left: -28px;
+      width: 100vw;
+      height: 0;
+      gap: 3rem;
+
+      @include scss-mixins.for-size(tablet-landscape-up--larger) {
+
+        transition: opacity 0;
+        opacity: 1;
+        justify-content: space-between;
+        flex-direction: row;
+        display: flex;
+        width: auto;
+        height: auto;
+        position: relative;
+        left: 0;
+        padding-top: 0;      
+        gap: 4rem;
+
+      }
+
+    }
+
+    &-menu-item {
+
+      margin-left: auto;
+      margin-right: auto;
+      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      color: #fff;
+      
+    
+      @include scss-mixins.for-size(tablet-landscape-up--larger) {
+      
+        width: initial;
+        display: inline-block;
+    
+      }     
+    
+      &:first-child{
+    
+        margin-top: 13vh;
+        position: relative;
+    
+        @include scss-mixins.for-size(tablet-landscape-up--larger) {
+    
+          margin-top: auto;
+          margin-left: 30px;
+    
+        }
+
+        &:after {
+
+
+          content : '';
+          // background-color: red;
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          top: 0;
+          background-image: url('..//images/icon-search--white.svg');
+          background-repeat: no-repeat;
+          background-size: cover;;
+          margin-left: -36px;
+
+          @include scss-mixins.for-size(tablet-landscape-up--larger) {
+
+            width: 20px;
+            height: 20px;
+            margin-left: -30px;
+            
+          }
+
+        }
+    
+      }     
+    
+      a {
+        
+        text-decoration: none;
+        color: #fff;
+        @extend .helvetica__medium;
+        @extend .ff-helvetica-heavy;
+        // @extend .abstract-typography__small;
+        @include scss-mixins.font-size__line-height(30, 30);  
+        display: flex;
+        justify-content: center;
+    
+        /**
+        *
+        * :: Issue : scss You may not @extend selectors across media queries.
+        *
+        * :: Resource : https://stackoverflow.com/questions/14840918/extending-selectors-from-within-media-queries-with-sass
+        *
+        */
+    
+        @include scss-mixins.for-size(tablet-landscape-up--larger) {
+          
+          justify-content: left;
+          border-bottom: 0;
+          padding-top: 0;
+          padding-bottom: 0;
+          justify-content: center;
+          @include scss-mixins.font-size__line-height(22, 26);
+          // @extend .abstract-typography__medium;
+    
+        }
+    
+      }
+    
+    }
+
+  }
+
+}

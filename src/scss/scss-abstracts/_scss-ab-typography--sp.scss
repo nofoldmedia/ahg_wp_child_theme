@@ -1,0 +1,211 @@
+/* Typography
+*/
+@use "../scss-mixins";
+@use "../scss-abstracts/_scss-ab-fonts--sp";
+
+body {
+
+    @extend .ff-quattrocento-sans__normal--latin-400;
+    @include scss-mixins.font-size__line-height(20, 28);
+    // @extend .ff-quattrocento__normal--latin-400;
+
+}
+
+.abstract-typography {
+
+    &-extra-large { 
+
+        @include scss-mixins.font-size__line-height(61, 61);
+        margin-bottom: 40px;
+        letter-spacing: -3px;
+        
+        @include scss-mixins.for-size(desktop-up) {
+
+            @include scss-mixins.font-size__line-height(100, 100);   
+            letter-spacing: -5px;
+
+        }
+
+    }   
+
+    &-large { 
+
+        @include scss-mixins.font-size__line-height(46, 46);
+        
+        // color: yellow;
+
+        @include scss-mixins.for-size(desktop-up) {
+
+            @include scss-mixins.font-size__line-height(68, 68);
+
+        }            
+
+    }     
+    
+    &-medium { 
+
+        @include scss-mixins.font-size__line-height(34, 34);
+        // color: blue;
+
+        @include scss-mixins.for-size(desktop-up) {
+
+            @include scss-mixins.font-size__line-height(42, 52);
+
+        }            
+
+    }
+
+    &-small { 
+
+        // color: orange;
+
+        @include scss-mixins.font-size__line-height(34, 34);  
+
+    }     
+
+    &__smaller { 
+
+        @include scss-mixins.font-size__line-height(22, 22);          
+
+    } 
+
+    &__extra-small { // <-- footer copyright
+
+        @include scss-mixins.font-size__line-height(26, 26);    
+
+    }            
+
+    &__dinky {
+
+        color: inherit;
+        @include scss-mixins.font-size__line-height(12, 17);
+
+    }
+
+    // :: Buttons
+    &__button-standard {
+        
+        @include scss-mixins.font-size__line-height(22, 22);
+
+    } 
+
+    &__button-large {
+
+        @include scss-mixins.font-size__line-height(22, 38);
+
+        @include scss-mixins.for-size(desktop-up) {
+
+            @include scss-mixins.font-size__line-height(28, 28);
+
+        }   
+
+    }
+
+    // :: Title sizes
+    &-title-size {
+
+        &-extra-large {
+
+            @include scss-mixins.mixin-typography-htags--large {
+
+                @include scss-mixins.font-size__line-height(46, 46);
+
+                @include scss-mixins.for-size(desktop-up) {
+        
+                    @include scss-mixins.font-size__line-height(68, 68);
+        
+                }  
+                            
+                margin-bottom: 1rem;
+                // @extend .ff-helvetica-heavy;
+
+            }
+
+        }  
+
+        &-large {
+
+            @include scss-mixins.mixin-typography-htags--large {
+
+                @include scss-mixins.font-size__line-height(46, 46);
+
+                @include scss-mixins.for-size(desktop-up) {
+        
+                    @include scss-mixins.font-size__line-height(68, 68);
+        
+                }  
+                            
+                margin-bottom: 1rem;
+                // @extend .ff-helvetica-heavy;
+
+            }
+
+        }          
+        
+        &-medium {
+
+            @include scss-mixins.mixin-typography-htags--medium{
+
+                @include scss-mixins.font-size__line-height(36, 36);
+
+                @include scss-mixins.for-size(desktop-up) {
+        
+                    @include scss-mixins.font-size__line-height(58, 58);
+        
+                }  
+                            
+                margin-bottom: 1rem;
+                // @extend .ff-helvetica-heavy;
+
+            }
+
+        }      
+        
+        &-small { 
+
+            // border: 10px solid red;
+
+            @include scss-mixins.font-size__line-height(34, 34);  
+
+        }   
+
+    }
+
+
+}
+
+h1 {
+
+    @extend .abstract-typography-large;
+    margin-bottom: 1rem;
+    @extend .ff-quattrocento__normal--latin-400;
+
+
+}
+
+h2 {
+
+    @extend .abstract-typography-medium;
+    margin-bottom: 1rem;
+    @extend .ff-quattrocento__normal--latin-400;
+
+}
+
+// h1 {
+
+//     @extend h2;
+
+// }
+
+h3 {
+
+    @extend .abstract-typography-small;
+    margin-bottom: 1rem;
+
+}
+
+p{
+
+    margin-top: 0;
+
+}

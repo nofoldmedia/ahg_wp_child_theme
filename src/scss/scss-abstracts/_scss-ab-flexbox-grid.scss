@@ -1,0 +1,297 @@
+/* 
+*
+* ** Demonstration only **
+*
+* fonts
+*/
+
+// :: Import mixin form 'node_modules'
+@use "./node_modules/flexbox-grid-mixins/dart-sass/flexbox-grid-mixins";
+@use "../scss-mixins";
+// @use "../scss--abstracts";
+
+// :: Wanted : https://thingsym.github.io/flexbox-grid-mixins/example-dart-sass/gap.html
+
+
+$default-grid-gutter--smallest: 20px;
+
+$default-grid-gutter--small: 125px;
+
+.abstract-flexbox-grid {
+
+
+
+  &__grid {
+
+    // background-color: red;
+    margin-bottom: 0 !important;
+    
+    @include flexbox-grid-mixins.grid(
+        
+      $display:	flex,
+
+      $flex-wrap: wrap,
+
+      // $gutter: $default-grid-gutter--smallest,
+
+      $gap: $default-grid-gutter--smallest
+
+    );   
+    
+    @include scss-mixins.for-size(desktop-up) {
+
+      @include flexbox-grid-mixins.grid(
+        
+        $justify-content: space-between
+
+      );   
+
+      padding: 0;
+
+    }      
+
+  }  
+
+  &__grid-item {
+    
+    &--column-format-flexbox-grid-six-six {
+
+      // background-color: green;
+      width: 100%;
+
+      @include scss-mixins.for-size(desktop-up) {
+
+        @include flexbox-grid-mixins.grid-col(
+        
+          $col: 6,
+
+          $gap: $default-grid-gutter--small
+
+        );
+
+      }   
+
+    }
+
+    &--column-format-flexbox-grid-eight-four {
+
+      flex: 1;
+
+      // background-color: lightblue;
+
+      &:nth-child(1){
+
+        @include flexbox-grid-mixins.grid-col(
+        
+          $gap: $default-grid-gutter--smallest
+
+        );
+
+        @include scss-mixins.for-size(desktop-up) {
+
+          @include flexbox-grid-mixins.grid-col(
+          
+            $col: 8,
+            $gap: $default-grid-gutter--small
+
+          );
+
+        }
+
+      }
+
+      &:nth-child(2){
+
+        width: 100%;
+
+        @include flexbox-grid-mixins.grid-col(
+
+          $gap: $default-grid-gutter--smallest
+
+        );
+
+        @include scss-mixins.for-size(desktop-up) {
+
+            @include flexbox-grid-mixins.grid-col(
+            
+              $col: 4,
+              $gap: $default-grid-gutter--small
+
+            );
+
+        }
+
+      }      
+
+    }
+
+    &--column-format-flexbox-grid-four-eight {
+
+      &:nth-child(1){
+
+
+        margin-bottom: 2rem;
+
+        @include scss-mixins.for-size(desktop-up) {
+
+          // margin-bottom: 0;
+
+        }
+
+        @include flexbox-grid-mixins.grid-col(
+        
+          // $col: 12,
+          $gap: $default-grid-gutter--smallest
+
+        );
+
+        @include scss-mixins.for-size(desktop-up) {
+        
+          @include flexbox-grid-mixins.grid-col(
+          
+            $col: 4,
+            $gap: $default-grid-gutter--small
+
+          );
+
+        }
+
+        margin-bottom: 0 !important;
+
+      }
+
+      &:nth-child(2){
+
+        @include flexbox-grid-mixins.grid-col(
+        
+          // $col: 12,
+          $gap: $default-grid-gutter--smallest
+
+        );
+
+        @include scss-mixins.for-size(desktop-up) {
+
+          @include flexbox-grid-mixins.grid-col(
+          
+            $col: 8,
+            $gap: $default-grid-gutter--small
+
+          );
+
+        }
+
+        margin-bottom: 0 !important;
+
+      }      
+
+    }      
+
+  }  
+  
+  /////////////////
+  /// 
+  /// 
+  /// 
+  
+  &__reverse-column-layout-for-mobile {
+
+    @include flexbox-grid-mixins.grid($gap: $default-grid-gutter--smallest);
+
+    flex-direction: column-reverse;
+
+    @include scss-mixins.for-size(desktop-up) {
+    
+      @include flexbox-grid-mixins.grid(
+        
+        $gap: $default-grid-gutter--small
+        
+      );
+
+    }   
+
+  }
+  
+  //////////////////////////////////
+  /// 
+  /// 
+  /// 
+  /// 
+  /// 
+  
+
+  &__grid-maintain-columns-on-mobile {
+    
+    // display: grid; // <-- needs to come last or the mixin will override with 'display : flex;'
+
+    @include flexbox-grid-mixins.grid();
+
+    @include flexbox-grid-mixins.grid(
+        
+      $justify-content: space-between
+
+    );  
+
+    display: flex;
+    padding: 0;
+    margin-bottom: 0 !important;
+
+  }
+
+  &__grid-item-maintain-columns-on-mobile {
+
+    &--column-format-flexbox-grid-eight-four {
+
+      &:nth-child(1){
+
+        @include flexbox-grid-mixins.grid-col(
+        
+          $col: 8,
+          $gap: $default-grid-gutter--smallest
+
+        );
+
+        @include scss-mixins.for-size(desktop-up) {
+
+          margin-bottom: 0 !important;
+
+          @include flexbox-grid-mixins.grid-col(
+          
+            $col: 8,
+            $gap: $default-grid-gutter--small
+
+          );
+
+        }
+
+        margin-bottom: 0 !important;
+
+      }
+
+      &:nth-child(2){
+
+        @include flexbox-grid-mixins.grid-col(
+        
+          $gap: $default-grid-gutter--smallest
+
+        );
+
+        @include scss-mixins.for-size(desktop-up) {
+
+            margin-bottom: 0 !important;
+
+            @include flexbox-grid-mixins.grid-col(
+            
+              $col: 4,
+              $gap: $default-grid-gutter--small
+
+            );
+
+          }
+
+        }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,36 @@
+// :: SCSS - Header : Site branding
+
+.t-p-header {
+
+  &__site-branding {    
+
+    // &-link{
+
+    //   z-index: 1;
+
+    // }
+
+    &-blog-info {
+
+      // border: 10px solid orange;
+      color: #fff;;
+
+    }
+
+  }
+
+  // .wordpress-child-theme__site-branding-logo {
+
+  .wordpress-child-theme__site-branding-logo {
+
+    width: 30px !important;
+    height: auto !important;
+  }
+
+  .wordpress-child-theme__site-branding-logo-link {
+  
+    display: flex;
+
+  }
+
+}

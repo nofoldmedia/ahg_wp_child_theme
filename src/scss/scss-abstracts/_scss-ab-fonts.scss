@@ -1,0 +1,49 @@
+/* 
+*
+* ** Demonstration only **
+*
+* fonts
+*/
+// :: Import Typekit font
+//@import url("https://use.typekit.net/imk0ejp.css"); 
+
+.ff-helvetica, // <-- should be this!
+.helvetica {
+    
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+
+    &__light {
+
+        @extend .helvetica;
+        font-weight: 300;
+
+    }
+
+    &__medium {
+
+        @extend .helvetica;
+        font-weight: 500;
+
+    }
+
+    &-heavy,
+    &__heavy {
+
+        @extend .helvetica;
+        font-weight: 700;
+
+    }
+
+}
+
+// ************************************************
+//
+// :: Dashicons 
+// 
+// :: Use case : Show/hide password in
+// 
+// :: imported using wp enque as there is no NPM 
+// :: package that correctly references the required fonts
+//
+// ************************************************

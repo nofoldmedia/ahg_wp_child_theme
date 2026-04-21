@@ -1,0 +1,139 @@
+{
+    "key": "group_68f1447a0e8d9",
+    "title": "Section Columns - 40\/60 tile CTA",
+    "fields": [
+        {
+            "key": "field_68f1447a0fad5",
+            "label": "Section : Columns 40\/60 tile CTA - Show\/hide",
+            "name": "f__section_columns_4060_tile_cta_show_hide",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Show": "Show",
+                "Hide": "Hide"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "allow_in_bindings": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_68f1447a0fad8",
+            "label": "Section : Columns 40\/60 tile CTA Custom class name",
+            "name": "f__section_columns_4060_tile_cta_custom_class_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "\/\/ <-- *for the devs  You only need to add the style name e.g. 'registration form'. The directory structure 'scss-layout-styles\/scss-ls-registration-form.scss'",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "homepage-hero",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68f1447a0fadf",
+            "label": "Section : Columns 40\/60 tile CTA -Page relationship 40",
+            "name": "f__section_columns_4060_tile_cta_page_relationship_40",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": "",
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_68f1447a0fae5",
+            "label": "Section : Columns 40\/60 tile CTA - Page relationship 60",
+            "name": "f__section_columns_4060_tile_cta_page_relationship_60",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22270"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22474"
+            }
+        ]
+    ],
+    "menu_order": 222,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1764923117
+}

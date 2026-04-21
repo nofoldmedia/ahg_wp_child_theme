@@ -1,0 +1,49 @@
+// @charset "UTF-8";
+// Normalize
+// :: Do not change this
+// ---------------------
+@use "normalize-scss/sass/normalize/import-now";
+// :: Do not change this
+// =====================
+
+// :: Abstracts
+// ------------
+@use "scss-abstracts/_scss-ab-reset"; // *** TO REVIEW ***
+@use "scss-abstracts/_scss-ab-scaffolding"; 
+@use "scss-abstracts/_scss-ab-animations"; 
+
+// :: Abstracts - sp
+// -----------------
+@use "scss-abstracts/_scss-ab-typography--sp"; // *** TO REVIEW ***
+
+// :: Template Partials
+// --------------------
+// :: Footer
+@use "scss-template-partials-sp/_scss-t-p-sp-footer";
+@use "scss-template-partials-sp/_scss-t-p-sp-footer-branding";
+@use "scss-template-partials-sp/_scss-t-p-sp-footer-contact";
+@use "scss-template-partials-sp/_scss-t-p-sp-footer-social-links";
+@use "scss-template-partials-sp/_scss-t-p-sp-footer-copyright";
+@use "scss-template-partials-sp/_scss-t-p-sp-footer-nav";
+// @use "scss-template-partials-sp/_scss-t-p-footer-list";
+// :: Header
+@use "scss-template-partials-sp/_scss-t-p-sp-header";
+@use "scss-template-partials-sp/_scss-t-p-sp-header-site-branding";
+@use "scss-template-partials-sp/_scss-t-p-sp-header-navigation-primary";
+@use "scss-template-partials-sp/_scss-t-p-sp-header-navigation-primary-toggle-control";
+// @use "scss-template-partials/_scss-t-p-footer-modal-target-element"; // <-- * review
+
+// :: SP Column content
+@use "scss-template-partials-sp/scss-content-preferences.scss";
+@use "scss-template-partials-sp/_scss-t-p-sp-section-column.scss";
+@use "scss-template-partials-sp/_scss-t-p-sp-section-column-content.scss";
+@use "scss-template-partials-sp/_scss-t-p-sp-section-hero.scss";
+
+//: Vendors
+@use "scss-vendors/scss-v-contactform-7.scss";
+
+// :: Componants
+@use "scss-componants/scss-c-buttons.scss";
+
+
+@use "scss-template-sections/scss-t-p-sections.scss";

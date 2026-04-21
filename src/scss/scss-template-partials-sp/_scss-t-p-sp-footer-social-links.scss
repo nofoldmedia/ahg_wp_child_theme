@@ -1,0 +1,60 @@
+// :: SCSS : Footer
+@use "../scss-abstracts";
+
+
+.template-partial-footer {
+
+  &__social-links {
+
+    background-color: red;
+    width: 200px;
+    // height: 200px;
+    // right:0;
+    max-width: 200px;
+
+    color:#fff;
+
+  }
+
+  &__social-links-title{
+
+    text-decoration: underline;
+
+  } 
+
+  &__social-links-list {
+
+
+    display: flex;
+
+
+  }
+
+  &__social-links-list li {
+    margin-right: 1rem;;
+
+    svg {
+
+      width: 20px;
+      height: 20px;
+
+    }
+
+    &:nth-child(3){
+
+      svg {
+
+        width: 23px;
+        height: 23px;
+  
+      }
+
+    }
+
+  }
+
+}
+
+
+
+

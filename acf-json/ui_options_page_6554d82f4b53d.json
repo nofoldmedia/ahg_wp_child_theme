@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_6554d82f4b53d",
+    "title": "Price plans",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Price plans",
+    "menu_slug": "price-plans",
+    "parent_slug": "none",
+    "advanced_configuration": false,
+    "icon_url": "",
+    "menu_title": "",
+    "position": null,
+    "redirect": false,
+    "description": "",
+    "update_button": "Update",
+    "updated_message": "Options Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": false,
+    "modified": 1700059183
+}

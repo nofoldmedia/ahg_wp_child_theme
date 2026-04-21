@@ -1,0 +1,13 @@
+// :: Button element : background color transitions :  SASS mixins
+//
+//
+
+
+@mixin links-transition($arg: "color 1s, border-top-color 1s, border-color 1s, border-bottom-color 1s, background-color 1s") {
+    $color-time: #{$arg};
+    -webkit-transition: $color-time;
+    -moz-transition: $color-time;
+    -ms-transition: $color-time;
+    -o-transition: $color-time;
+    transition: $color-time;
+}

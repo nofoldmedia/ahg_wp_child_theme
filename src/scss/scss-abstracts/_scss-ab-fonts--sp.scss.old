@@ -1,0 +1,27 @@
+/* 
+*
+* ** Demonstration only **
+*
+* fonts
+*/
+// :: Import Typekit font
+// @import url("https://use.typekit.net/imk0ejp.css"); 
+
+// .abstract-fonts,
+.font{
+    
+    &-ff-helvetica {
+    
+        font-family: Helvetica, sans-serif;
+        font-style: normal;
+        // @extend .helvetica;
+
+    }
+
+    &--weight-heavy {
+
+        font-weight: 700;
+
+    }
+
+}

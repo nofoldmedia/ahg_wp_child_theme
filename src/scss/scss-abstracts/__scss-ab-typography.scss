@@ -1,0 +1,918 @@
+/* Typography
+*/
+// @use "../scss-mixins";
+// @use "../scss-abstracts/_scss-ab-fonts";
+
+// body {
+
+//     @extend .helvetica__light;
+
+// }
+
+// p {
+
+//     margin-block-start: 0;
+//     margin-bottom: 1.5rem;
+
+// }
+ 
+// p,
+// ul > li,
+// ol > li {
+
+//     color: inherit;
+//     @include scss-mixins.font-size__line-height(16, 22);
+//     @extend .helvetica__light;
+
+//     @include scss-mixins.for-size(desktop-up) {
+
+//         @include scss-mixins.font-size__line-height(19, 27);
+
+//     }
+
+// }
+
+// // p:last-child {
+
+// //     margin-bottom: 0
+
+// // }
+
+// strong {
+
+//     @extend .helvetica__heavy; 
+
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p {
+
+//   > span {
+
+//     font-size: inherit !important;
+
+//   }
+
+// }
+
+// table {
+  
+//     @include scss-mixins.font-size__line-height(16, 24);
+//     @extend .helvetica__light;
+
+// }
+
+// // Buttons
+// [class^="acf-field-group-3-componant-button-group__button"] {
+ 
+//     @include scss-mixins.font-size__line-height(22, 22);
+//     @extend .helvetica__medium;
+//     border: 1px solid transparent;
+//     padding: .5rem 3.5rem;
+//     border-radius: 30px;
+//     text-decoration: none;
+//     cursor: pointer;
+//     @include scss-mixins.links-transition("color 0.5s, background-color 0.5s, border-color 0.5s");
+
+// }
+
+// a,
+// li a {
+
+//     color: inherit;
+
+// }
+
+
+
+
+
+
+// // ///////////////////////////////////////////////////////
+// // ///////////////////////////////////////////////////////
+// // ///////////////////////////////////////////////////////
+
+// .abstract-typography {
+
+//     &-extra-large { 
+
+//         @include scss-mixins.font-size__line-height(61, 61);
+
+//         margin-bottom: 40px;
+//         letter-spacing: -3px;
+        
+//         @include scss-mixins.for-size(desktop-up) {
+
+//             @include scss-mixins.font-size__line-height(100, 100);   
+//             letter-spacing: -5px;
+
+//         }
+
+//     }   
+
+//     &__large-to-small { 
+
+//         @include scss-mixins.font-size__line-height(34, 34);
+
+//         @include scss-mixins.for-size(desktop-up) {
+
+//             @include scss-mixins.font-size__line-height(68, 68);
+
+//         }            
+
+//     }   
+
+//     &__large { 
+
+//         @include scss-mixins.font-size__line-height(46, 46);
+
+//         @include scss-mixins.for-size(desktop-up) {
+
+//             @include scss-mixins.font-size__line-height(68, 68);
+
+//         }            
+
+//     }     
+
+//     &__medium { 
+
+//         @include scss-mixins.font-size__line-height(34, 34);
+
+//         @include scss-mixins.for-size(desktop-up) {
+
+//             @include scss-mixins.font-size__line-height(42, 42);
+
+//         }            
+
+//     }  
+    
+//     &__medium--placeholder { 
+
+//         @include scss-mixins.font-size__line-height(28, 28);
+
+//         @include scss-mixins.for-size(desktop-up) {
+
+//             @include scss-mixins.font-size__line-height(42, 42);
+
+//         }            
+
+//     }      
+    
+//     &__small { 
+
+//         // border: 10px solid red;
+
+//         @include scss-mixins.font-size__line-height(34, 34);  
+
+//     }        
+
+//     &__smaller { 
+
+//         // border: 10px solid red;
+
+//         @include scss-mixins.font-size__line-height(22, 22);          
+
+//     } 
+
+//     &__smaller--settings { 
+
+//         // border: 10px solid red;
+
+//         @include scss-mixins.font-size__line-height(18, 16);          
+
+//         @include scss-mixins.for-size(desktop-up) {
+
+//             @include scss-mixins.font-size__line-height(22, 30);          
+
+//         }
+
+//     }     
+    
+//     &__much-smaller { 
+
+//         // border: 10px solid red;
+
+//         @include scss-mixins.font-size__line-height(16, 22);          
+
+//     } 
+
+//     //////////////////////////////
+
+//     &__no-margin { // <-- footer copyright
+
+//         @include scss-mixins.font-size__line-height(16, 16);    
+//         margin-bottom: 0;
+
+//     }
+
+//     &__extra-small { // <-- footer copyright
+
+//         @include scss-mixins.font-size__line-height(26, 26);    
+
+//     }
+
+//     &__extra-small-form-title { // <-- Form titles need slightly different line height
+
+//         @include scss-mixins.font-size__line-height(18, 28);   
+
+//     }
+
+//     &__extra-small--heavy { // <-- footer copyright
+
+//         @include scss-mixins.font-size__line-height(16, 16);  
+//         @extend .ff-helvetica-heavy;  
+
+//     }   
+    
+//     &__small--gf-checkbox-labels { // <-- gf checkboxes
+
+//         @include scss-mixins.font-size__line-height(18.75, 24);    
+
+//     }              
+
+//     &__button-standard {
+
+//         // @include scss-mixins.for-size(desktop-up) {
+        
+//             @include scss-mixins.font-size__line-height(22, 22);
+
+//         // }
+
+//     } 
+
+//     &__button-large {
+
+//         @include scss-mixins.font-size__line-height(22, 38);
+
+//         @include scss-mixins.for-size(desktop-up) {
+
+//             @include scss-mixins.font-size__line-height(28, 28);
+
+//         }   
+
+//     }
+
+//     // Use case : Footer company info
+//     // size : Dinky 
+//     // Example : Look at footer
+//     // Size : 12pt     
+
+
+//     &__dinky {
+
+//         color: inherit;
+//         @include scss-mixins.font-size__line-height(12, 17);
+//         // @extend .helvetica;
+    
+
+//     }
+        
+//     &-title-size{
+
+//         &__extra-large { 
+
+//             @include scss-mixins.font-size__line-height(61, 61);
+
+//             margin-bottom: 40px;
+//             letter-spacing: -3px;
+            
+//             @include scss-mixins.for-size(desktop-up) {
+
+//                 @include scss-mixins.font-size__line-height(100, 100);   
+//                 letter-spacing: -5px;
+
+//             }
+
+//         }   
+
+//         // Use case : h* feature title
+//         // size : large
+//         // Example : ‘we’ll get your shizl together…'
+//         // Mobile size : 34pt
+//         // Mobile line-height : 34pt      
+//         // Desktop size : 42pt
+//         // Desktop line-height : 42pt  
+
+//         &__large-to-small { 
+
+//             @include scss-mixins.font-size__line-height(34, 34);
+
+//             @include scss-mixins.for-size(desktop-up) {
+
+//                 @include scss-mixins.font-size__line-height(68, 68);
+
+//             }            
+
+//         }   
+
+//         // Use case : h* feature title
+//         // size : large
+//         // Example : ‘we’ll get your shizl together…'
+//         // Mobile size : 34pt
+//         // Mobile line-height : 34pt      
+//         // Desktop size : 42pt
+//         // Desktop line-height : 42pt  
+
+//         &__large { 
+
+//             @include scss-mixins.font-size__line-height(46, 46);
+
+//             @include scss-mixins.for-size(desktop-up) {
+
+//                 @include scss-mixins.font-size__line-height(68, 68);
+
+//             }            
+
+//         }     
+        
+//         // Use case : h* feature title
+//         // size : medium
+//         // Example : ‘professional plus'
+//         // Mobile size : 34pt
+//         // Mobile line-height : 34pt      
+//         // Desktop size : 42pt
+//         // Desktop line-height : 42pt  
+
+//         &__medium { 
+
+//             @include scss-mixins.font-size__line-height(34, 34);
+
+//             @include scss-mixins.for-size(desktop-up) {
+
+//                 @include scss-mixins.font-size__line-height(42, 42);
+
+//             }            
+
+//         }  
+        
+//         &__medium--placeholder { 
+
+//             @include scss-mixins.font-size__line-height(28, 28);
+
+//             @include scss-mixins.for-size(desktop-up) {
+
+//                 @include scss-mixins.font-size__line-height(42, 42);
+
+//             }            
+
+//         }      
+        
+//         // Use case : h* feature title
+//         // size : small
+//         // Example : ‘we’ll get your shizl together…'
+//         // Mobile size : 34pt
+//         // Mobile line-height : 34pt      
+//         // Desktop size : 42pt
+//         // Desktop line-height : 42pt  
+
+//         &__small { 
+
+//             // border: 10px solid red;
+
+//             @include scss-mixins.font-size__line-height(34, 34);  
+
+//         }     
+
+
+//         // Use case : h* feature title
+//         // size : small
+//         // Example : ‘we’ll get your shizl together…'
+//         // Size : 22pt     
+
+//         &__smaller { 
+
+//             // border: 10px solid red;
+
+//             @include scss-mixins.font-size__line-height(22, 22);          
+
+//         } 
+
+//         &__smaller--settings { 
+
+//             // border: 10px solid red;
+
+//             @include scss-mixins.font-size__line-height(18, 16);          
+
+//             @include scss-mixins.for-size(desktop-up) {
+
+//                 @include scss-mixins.font-size__line-height(22, 30);          
+
+//             }
+
+//         }     
+        
+//         &__much-smaller { 
+
+//             // border: 10px solid red;
+
+//             @include scss-mixins.font-size__line-height(16, 22);          
+
+//         } 
+
+//         //////////////////////////////
+
+//         &__no-margin { // <-- footer copyright
+
+//             @include scss-mixins.font-size__line-height(16, 16);    
+//             margin-bottom: 0;
+
+//         }
+
+//         &__extra-small { // <-- footer copyright
+
+//             @include scss-mixins.font-size__line-height(26, 26);    
+
+//         }
+
+//         &__extra-small-form-title { // <-- Form titles need slightly different line height
+
+//             @include scss-mixins.font-size__line-height(18, 28);   
+
+//         }
+
+//         &__extra-small--heavy { // <-- footer copyright
+
+//             @include scss-mixins.font-size__line-height(16, 16);  
+//             @extend .ff-helvetica-heavy;  
+
+//         }   
+        
+//         &__small--gf-checkbox-labels { // <-- gf checkboxes
+
+//             @include scss-mixins.font-size__line-height(18.75, 24);    
+
+//         }              
+
+//         &__button-standard {
+
+//             // @include scss-mixins.for-size(desktop-up) {
+            
+//                 @include scss-mixins.font-size__line-height(22, 22);
+
+//             // }
+
+//         } 
+
+//         &__button-large {
+
+//             @include scss-mixins.font-size__line-height(22, 38);
+
+//             @include scss-mixins.for-size(desktop-up) {
+
+//                 @include scss-mixins.font-size__line-height(28, 28);
+
+//             }   
+
+//         }
+
+//         // Use case : Footer company info
+//         // size : Dinky 
+//         // Example : Look at footer
+//         // Size : 12pt     
+
+
+//         &__dinky {
+
+//             color: inherit;
+//             @include scss-mixins.font-size__line-height(12, 17);
+//             // @extend .helvetica;
+        
+
+//         }
+
+//     }
+
+// }
+
+// .abstract-typography {
+
+//     &-title-size {
+
+//         &-extra-large {
+
+//             @extend .abstract-typography-extra-large;
+//             @extend .ff-helvetica-heavy;
+
+//         }
+
+//     }
+
+// }
+
+// ///
+// /// 
+// /// 
+// .abstract-typography-wysiwyg-editor {
+
+
+//     &__title-size {
+
+//         &-extra-large {
+
+//             // border: 10px solid yellow;
+
+//             // @include scss-mixins.mixin-typography-htags--extra-large{
+    
+//                 @extend .abstract-typography-extra-large;
+//                 @extend .ff-helvetica-heavy;
+                
+                
+    
+//             // }
+
+//         }          
+
+//         // &-large-to-small {
+
+//         //     @include scss-mixins.mixin-typography-htags--large-to-small{
+    
+//         //         @extend .abstract-typography__large-to-small;
+//         //         margin-bottom: 1rem;
+//         //         @extend .ff-helvetica-heavy;
+    
+//         //     }
+
+//         // }  
+
+//         &-large {
+
+//             // border: 10px solid red;
+
+//             @include scss-mixins.mixin-typography-htags--large{
+
+//                 @extend .abstract-typography__large;
+//                 margin-bottom: 1rem;
+//                 @extend .ff-helvetica-heavy;
+                
+    
+//             }
+
+//         }          
+
+//         &-medium {
+
+//             // white-space: nowrap;
+
+//             // border: 10px solid red;
+//             @extend .abstract-typography__medium;
+
+//             @include scss-mixins.mixin-typography-htags--medium{
+    
+//                 @extend .abstract-typography__medium;
+//                 @extend .ff-helvetica-heavy;
+    
+//             }
+
+//         }  
+
+//         &-small {
+
+//             @include scss-mixins.mixin-typography-htags--small{
+
+//                 @extend .abstract-typography__small;
+//                 @extend .ff-helvetica-heavy;
+
+//             }
+
+//             strong{
+
+//                 position: relative;
+
+//             }
+
+//             &--margin-bottom-large{
+
+//                 @include scss-mixins.mixin-typography-htags--extra-small--margin-bottom-large {
+
+//                     @extend .abstract-typography__small;
+//                     @extend .ff-helvetica-heavy;
+    
+//                 }
+
+//             }
+
+//         }  
+        
+//         &-extra-small {
+
+//             @include scss-mixins.mixin-typography-htags--extra-small{
+    
+//                 @extend .abstract-typography__extra-small;
+//                 @extend .ff-helvetica-heavy;
+    
+//             }
+
+//         }  
+        
+//         // &-extra-small-form-title {
+
+//         //     @include scss-mixins.mixin-typography-htags--extra-small-form-title{
+    
+//         //         @extend .abstract-typography__extra-small-form-title;
+//         //         @extend .ff-helvetica-heavy;
+    
+//         //     }
+
+//         // }          
+
+//     }
+
+
+//     // &__title-style {
+        
+//     //     &-not-underlined {
+
+//     //         // @include scss-mixins.mixin-typography-htags--medium{
+                
+//     //             // padding-bottom: 1.5rem;      
+//     //             // margin-bottom: 0;  
+//     //             // @extend .helvetica__heavy;
+
+//     //         // }
+    
+//     //     }
+
+//     //     &-underlined {
+
+
+//     //         @include scss-mixins.mixin-typography-htags--medium{
+                
+//     //             border-bottom: 2px solid hotpink;
+//     //             border-bottom-width: 1px;
+//     //             border-bottom-style: solid;
+//     //             border-bottom-color: inherit;
+//     //             // padding-bottom: 1.5rem;
+//     //             padding-bottom: 1.6rem;
+//     //             margin-bottom: 4rem;             
+//     //             // @extend .helvetica__heavy;
+//     //             // @extend .abstract-typography__medium;
+
+//     //         }
+    
+//     //     }
+
+//     //     &-underlined-heavy {
+
+//     //         @include scss-mixins.mixin-typography-htags--medium{
+                
+//     //             padding-bottom: .8rem;
+//     //             margin-bottom: 1.5rem;  
+//     //             border-bottom: 2px solid hotpink;
+//     //             border-bottom-width: 1px;
+//     //             border-bottom-style: solid;
+//     //             border-bottom-color: inherit;
+
+//     //             @include scss-mixins.for-size(desktop-up) {
+                
+//     //                 padding-bottom: 1.8rem;
+//     //                 margin-bottom: 3rem; 
+//     //                 border-bottom-width: 3px; 
+
+//     //             }
+
+//     //         }
+    
+//     //     }        
+        
+//     // } 
+
+
+        
+  
+
+    
+//     // :: Bulleted lists
+
+//     &__bulleted-list {
+
+//         ul{
+
+//             @include scss-mixins.for-size(desktop-up) {            
+        
+//                 // :: Resource : https://stackoverflow.com/questions/48864993/column-wrap-after-a-specific-number-of-child-elements
+//                 display: grid;
+//                 grid-gap: 0px;
+//                 // grid-auto-flow: column; <-- set by cms & JS           
+//                 // grid-template-rows: repeat(7, auto); // <-- set by cms & JS
+
+//             }
+           
+//         }
+
+//         li {
+
+//             &:nth-child(7) ~ li{
+
+//                 display: none;
+
+//                 @include scss-mixins.for-size(desktop-up) {
+
+//                     display: block;
+
+//                 }
+
+//             }
+            
+//             margin-bottom: .8rem;
+
+//             @include scss-mixins.for-size(desktop-up) {
+                
+//                 margin-bottom: 1.5rem;
+
+//             }
+
+//             * {
+
+//                 margin-right: 1rem;
+//                 width: 15px;
+
+//                 @include scss-mixins.for-size(desktop-up) {
+
+//                     width: 19px;
+
+//                 }
+
+//             }
+
+//             > *:first-child {
+
+//                 margin-bottom: -2px;
+
+//             }
+
+//             &:last-child {
+
+//                 margin-bottom: 0;
+
+//             }
+
+//         }      
+
+//     }
+
+//     &__horizontal-list {
+
+//         ul{
+
+//             display: grid;
+//             grid-template-columns: repeat(2, 1fr);
+//             grid-template-rows: repeat(2, 1fr); 
+
+//             @include scss-mixins.for-size(desktop-up) {
+                
+//                 display: flex;
+
+//             }
+
+//         }
+
+//         li {
+
+//             // display: inline-block;
+//             margin-right: 3rem;
+
+//         }      
+
+//     }
+
+// }
+
+
+// /** 
+//  *
+//  *
+//  * :: Table styling
+//  *   
+//  *
+// */
+// table {
+
+//     border: 3px solid #777;
+//     border-collapse: collapse;
+//     width: 100%;
+  
+//   }
+  
+
+//   th {
+
+//     background-color: #1d1d1b;
+//     color: #fff;
+
+//   }
+
+
+//   td, th {
+  
+//      border: 1px solid #777;
+//      padding: 1rem;
+  
+//      h1,
+//      h2,
+//      h3,
+//      h4,
+//      h5,
+//      p:last-child{
+  
+//         margin-bottom: 0 !important;
+  
+//      }
+  
+//   }
+
+// // :: form tables specifically
+
+// /** 
+//  *
+//  *
+//  * :: Table styling
+//  *   
+//  *
+// */
+
+// .template_documents-template .zoomViewport{
+
+//     // :: Typography
+
+//     p {
+
+//         margin-block-start: 0;
+//         margin-bottom: 1.5rem;
+
+//         @include scss-mixins.for-size(desktop-up) {
+
+//             margin-bottom: 1.5rem;
+
+//         }
+    
+//     }
+
+//     .section-header p,
+//     .section-footer p {
+
+//         margin-block-start: 0;
+//         margin-bottom: .5rem;
+//         font-size: 10px !important;
+//         color: #c8c8c7;
+//         // border: 10px solid red;
+    
+//     }    
+
+//     p,
+//     ul > li,
+//     ol > li {
+    
+//         color: inherit;
+//         // @include scss-mixins.font-size__line-height(8, 11);
+//         @include scss-mixins.font-size__line-height(12, 17);
+//         @extend .helvetica__light;
+    
+//         @include scss-mixins.for-size(desktop-up) {
+    
+//             @include scss-mixins.font-size__line-height(19, 27);
+    
+//         }
+    
+//     }    
+
+//     table {
+
+//         border: 3px solid #777;
+//         border-collapse: collapse;
+//         width: 100%;
+
+//     }
+  
+
+//   th {
+
+//     background-color: #1d1d1b;
+//     color: #fff;
+
+//   }
+
+
+//   td, th {
+  
+//      border: 1px solid #777;
+//      padding: .5rem;
+  
+//      h1,
+//      h2,
+//      h3,
+//      h4,
+//      h5,
+//      p:last-child{
+  
+//         margin-bottom: 0 !important;
+  
+//      }
+  
+//   }
+
+// }

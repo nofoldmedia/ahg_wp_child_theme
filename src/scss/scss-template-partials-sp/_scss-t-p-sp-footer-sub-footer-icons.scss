@@ -1,0 +1,71 @@
+// :: SCSS : Footer
+@use "../scss-abstracts/_scss-abstract-fonts";
+@use "../scss-abstracts/_scss-abstract-colors";
+@use "../scss-abstracts";
+
+
+
+.template-partial-sub-footer__group {
+
+
+
+
+.t-p-acf-t2-ct-image {
+
+  min-width: 150px;
+  min-height: 100px;
+}
+
+.copyright-text-sub-footer {
+
+  p {
+    @extend .abstract-typography-wysiwyg-editor__title-size-extra-small;
+
+ 
+  }
+
+  span {
+    @extend .abstract-typography-wysiwyg-editor__title-size-extra-small;
+
+    margin-bottom: 0 !important;
+  }
+}
+}
+
+.contact-address-footer {
+  display: none; 
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.icon-sub-footer {
+
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+
+  .scaffolding-row {
+
+
+
+    @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+
+
+  }
+
+  .remove-footer-mobile {
+    display: none;
+    @media (min-width: 1200px) {
+      display: block
+    }
+  }
+
+

@@ -1,0 +1,238 @@
+// :: Font size, line height and rhythm SASS mixins
+//
+// Reference : https://codepen.io/vajkri/pen/QwvLgg
+//
+// h1 {
+//    @include rhythm(32, 38);
+// }
+//
+
+
+
+
+@mixin font-size($sizeValue: 12) {
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.0625 * $sizeValue) + rem;
+}
+
+@mixin line-height($heightValue: 20) {
+  line-height: $heightValue + px; //fallback for old browsers
+  line-height: (0.0625 * $heightValue) + rem;
+}
+
+@mixin font-size__line-height($sizeValue: 12, $heightValue: 20) {
+
+  @include font-size($sizeValue);
+  @include line-height($heightValue);
+  
+}
+
+//  :: H tags
+
+// https://stackoverflow.com/questions/7539125/can-i-target-all-h-tags-with-a-single-selector
+// https://sass-lang.com/documentation/at-rules/extend
+// h1, h2, h3,
+// h4, h5, h6 {
+//     @extend %headings !optional;
+// }
+
+@mixin mixin-typography-htags--extra-large {
+
+  h1 {
+    
+    // display: inline-block;
+    border: 40px solid pink !important;
+    position: relative;
+    @content;
+
+  }
+
+}
+
+@mixin mixin-typography-htags--large-to-small {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6   
+  #gform_3 .gfield_label,
+  #gform_7 .gfield_label,
+  #gform_9 .gfield_label,
+  #gform_10 .gfield_label,
+  #gform_11 .gfield_label,
+  #gform_12 .gfield_label  // <-- subscriber level 3
+
+  {
+
+    display: inline-block;
+    position: relative;
+    @content;
+
+  }
+
+}
+
+@mixin mixin-typography-htags--large {
+
+  h1,
+  h2,
+  h3
+
+  {
+
+    // display: inline-block;
+    border: 20px solid pink;
+    position: relative;
+    @content;
+
+  }
+
+}
+
+@mixin mixin-typography-htags--medium {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  #gform_3 .gfield_label,
+  #gform_7 .gfield_label,
+  #gform_9 .gfield_label,
+  #gform_10 .gfield_label,
+  #gform_11 .gfield_label,
+  #gform_12 .gfield_label  // <-- subscriber level 3
+  {
+
+    @content;
+
+    // border: 10px solid lightgreen;
+    margin-bottom: 1.5rem;
+
+  }
+
+}
+
+@mixin mixin-typography-htags--small {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  #gform_3 .gfield_label,
+  #gform_7 .gfield_label,
+  #gform_9 .gfield_label,
+  #gform_10 .gfield_label,
+  #gform_11 .gfield_label,
+  #gform_12 .gfield_label, // <-- subscriber level 3
+  .t-p-panel__body-title
+  {
+
+    
+    @content;
+    letter-spacing: -.7px;
+    margin-bottom: 1rem;
+    letter-spacing: -.8px;  
+
+  }
+
+}
+
+@mixin mixin-typography-htags--smaller {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  #gform_3 .gfield_label,
+  #gform_7 .gfield_label,
+  #gform_9 .gfield_label,
+  #gform_10 .gfield_label,
+  #gform_11 .gfield_label,
+  #gform_12 .gfield_label, // <-- subscriber level 3
+  .t-p-panel__body-title
+  {
+
+    @content;
+
+  }
+
+}
+
+@mixin mixin-typography-htags--extra-small {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+  {
+
+    @content;
+    margin-bottom: 1.8rem;
+
+  }
+
+}
+
+@mixin mixin-typography-htags--extra-small-form-title {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+  {
+
+    @content;
+
+  }
+
+}
+
+@mixin mixin-typography-htags--extra-small--margin-bottom-large {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+  {
+
+    @content;
+    margin-bottom: 3.1875rem;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+@mixin mixin-typography-page_tags {
+
+    p,
+    a,
+    li,
+    label {
+
+      @content;
+
+    }
+
+}
+

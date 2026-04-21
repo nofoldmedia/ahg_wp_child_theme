@@ -1,0 +1,115 @@
+<?php
+/**
+ * 
+ * :: Template partial scaffolding : Column 100
+ * 
+ */
+
+?>                    
+
+<section 
+
+<?php
+
+/**
+ * ---------------------
+ * 
+ * :: Section anchour tag
+ * 
+ * ---------------------
+ */
+
+if($f__section_tile_4060_anchour_tag != ''):
+
+?>
+
+id="<?= $f__section_tile_4060_anchour_tag ?>"
+
+<?php
+
+endif;
+
+/**
+ * ----------------------
+ * 
+ * /:: Section anchour tag
+ * 
+ * ======================
+ */
+
+?>
+
+class="t-p-sp-section-hero section-hero">
+
+    <div class="scaffolding-container">
+        
+        <div class="scaffolding-row">
+
+            <div class="scaffolding-columns">
+
+                <!--  -->
+                <!-- <div class="
+                
+                    tp-sp-section-column 
+                    
+                    tp-sp-section-column__50 
+                    
+                    tp-sp-section-column__50--bgd-image-tile
+                    
+                ">
+
+                    <div class="
+                    
+                        tp-sp-section-column-content__bgd 
+                        
+                        tp-sp-section-column-content__bgd--no-overlay
+                        
+                    " style="background-size: cover; background-image: url('http://shizlpea.local/wp-content/uploads/2026/03/hero-level.webp');"></div>
+
+                </div> -->
+                <!--  -->
+
+                <div class="
+                
+                    column 
+                    
+                    column__100 
+                    
+                    column__100--hero
+                    
+                ">
+
+                <div class="tp-sp-section-column tp-sp-section-column__50 tp-sp-section-column__50--bgd-image-tile">
+
+                    <?php
+
+                    $args = array( 
+
+                        // :: Pass post ID
+                        'var__post_id' => get_the_ID(),
+
+                        // :: Pass font size
+                        'var__section_hero_title_text_size' => get_field('f__section_hero_title_text_size'),
+
+                        // :: Pass bgd image
+                        'var__section_hero_background_image' => get_field('f__section_hero_background_image'),
+
+                        // :: Hero text
+                        'var__section_hero_text_area' => get_field('f__section_hero_text_area'),
+
+                    );
+
+                    // :: Get componant
+                    get_template_part( 'template-partials-universal-content/t-p-u-c-hero', '', $args ); // template-parts/file-name.php
+
+                    ?>
+
+                </div><!-- /.column 100 -->
+
+            </div><!-- /.columns -->
+
+        </div><!-- /.scaffolding-container -->
+
+    </div><!-- /scaffolding.--row -->
+
+</section>

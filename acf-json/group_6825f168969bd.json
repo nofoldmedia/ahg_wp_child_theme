@@ -1,0 +1,132 @@
+{
+    "key": "group_6825f168969bd",
+    "title": "Section Columns - 40\/60 - 1",
+    "fields": [
+        {
+            "key": "field_689ebf6b9a60a",
+            "label": "Section : Columns 40\/60 - 1 - Show\/hide",
+            "name": "f__section_columns_4060_1_show_hide",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Show": "Show",
+                "Hide": "Hide"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "allow_in_bindings": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6825f16897db9",
+            "label": "Section : Columns 40\/60 - 1 - Custom class name",
+            "name": "f__section_columns_4060_1_custom_class_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "\/\/ <-- *for the devs  You only need to add the style name e.g. 'registration form'. The directory structure 'scss-layout-styles\/scss-ls-registration-form.scss'",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "homepage-hero",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6825f16897dce",
+            "label": "Section : Columns 40\/60 - 1 -Page relationship 40",
+            "name": "f__section_columns_4060_1_page_relationship_40",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": "",
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_6825f16897dd1",
+            "label": "Section : Columns 40\/60 - 1 - Page relationship 60",
+            "name": "f__section_columns_4060_1_page_relationship_60",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22270"
+            }
+        ]
+    ],
+    "menu_order": 222,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1763108272
+}

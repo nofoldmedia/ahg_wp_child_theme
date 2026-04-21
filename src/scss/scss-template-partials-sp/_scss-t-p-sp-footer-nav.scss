@@ -1,0 +1,68 @@
+// :: SCSS : Footer
+@use "../scss-abstracts";
+
+
+.template-partial-footer {
+
+  &__nav {
+
+    
+    background-color: limegreen;
+    // width: 200px;
+    height: 115px;
+    margin-left: auto;
+    display: flex;
+
+    &-list{
+
+      display: flex;
+
+    }
+    
+  //     &-group {
+  
+  //       // background-color: orange;
+  //       width: 200px;
+  //       height: 200px;
+  //       color: #fff;
+  
+  //     }
+  
+  //     &-title {
+  
+  //       text-decoration: underline;
+  
+  //     }    
+  
+  //     &-list {
+  
+  
+  //     }    
+  
+      // &-item
+      .menu-item {
+  
+        // @extend .abstract-typography__small;
+        margin-left: 4rem;
+        // margin-bottom: .8rem;
+
+        a {
+
+                color: #fff;
+                text-decoration: none;
+
+        }
+  
+      }        
+  
+    // }
+
+
+  }
+
+
+}
+
+
+
+

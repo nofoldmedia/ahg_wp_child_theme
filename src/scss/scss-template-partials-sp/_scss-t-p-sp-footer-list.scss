@@ -1,0 +1,45 @@
+// :: SCSS : Footer
+@use "../scss-abstracts/_scss-abstract-fonts";
+@use "../scss-abstracts/_scss-abstract-colors";
+@use "../scss-abstracts";
+
+
+.template-partial-footer {
+
+  &__list{
+    
+    &-group {
+
+      // background-color: orange;
+      width: 200px;
+      height: 200px;
+      color: #fff;
+
+    }
+
+    &-title {
+
+      text-decoration: underline;
+
+    }    
+
+    &-list {
+
+
+    }    
+
+    &-item {
+
+      @extend .abstract-typography__small;
+      margin-bottom: .8rem;
+
+    }        
+
+  }
+
+
+}
+
+
+
+

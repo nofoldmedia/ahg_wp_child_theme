@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_65d37a7d1878d",
+    "title": "Questionnaire",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Questionnaire",
+    "menu_slug": "document-questionnaire",
+    "parent_slug": "none",
+    "advanced_configuration": 1,
+    "icon_url": "dashicons-welcome-write-blog",
+    "menu_title": "Questionnaire",
+    "position": "",
+    "redirect": 0,
+    "description": "",
+    "update_button": "Update",
+    "updated_message": "Options Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1708358343
+}

@@ -1,0 +1,16 @@
+@use "../scss-mixins";
+@use "../scss-abstracts";  
+
+.content-preferences{
+
+    &-title-size {
+
+        &__extra-large {
+
+            @extend .abstract-typography-title-size-extra-large;
+
+        }
+
+    }
+
+}

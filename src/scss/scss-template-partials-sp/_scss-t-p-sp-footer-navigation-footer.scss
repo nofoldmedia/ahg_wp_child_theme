@@ -1,0 +1,295 @@
+// :: SCSS : Header
+@use "../scss-abstracts/_scss-abstract-fonts";
+@use "../scss-abstracts/_scss-abstract-colors";
+@use "../scss-abstracts";
+
+.template-partial-footer {
+
+  p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .template-partial-footer__navigation-footer__title {
+
+
+    @extend .roboto__bold;
+
+
+    @media (min-width: 1200px) {
+    margin-bottom: 1.5rem;
+    text-decoration: underline;
+
+    font-size: 18px;
+    }
+  }
+
+  &__navigation-footer {
+    // border: 10px solid red;
+    // width: 70%;
+    // margin: auto;
+    font-size: 18px;
+
+    color: white;
+
+
+
+    li {
+
+      margin-bottom: 1rem;
+      @media (min-width: 1200px) {
+      margin-bottom: 0.2rem;
+    }
+  }
+
+
+    .menu-item-has-children {
+
+     a {
+
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+
+      @media (min-width: 1200px) {
+      text-decoration: underline;
+      color: white;
+      font-weight: 500;
+      }
+
+
+    }
+
+    a:visited {
+      color: white !important;
+    }
+
+    a:active {
+      color: white !important;
+    }
+
+    a:focus {
+      color: white !important;
+    }
+
+    a:link, a:visited {
+      color: white !important;
+    }
+
+  }
+
+  .menu-item-object-surgeries-sets:nth-of-type(n+2) {
+
+    margin-top: 0;
+
+    @media (min-width: 1200px) {
+    margin-top: 1.5rem;
+    color: white !important;
+    }
+  }
+
+    .sub-menu {
+
+
+        display: none;
+        
+        @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+  
+          }
+          
+
+
+
+  
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 16px;
+
+ 
+      
+    }
+
+  
+
+  }
+
+
+    &-container {
+      border: 10px solid orange;
+    }
+
+    &-list {
+      border: 10px solid lightblue;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: white !important;
+      }
+
+    }
+
+    &-list-item {
+      border: 10px solid lightgreen;
+    }
+  }
+
+  &__contact-information {
+    @extend .roboto__bold;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    p {
+      line-height: 16px;
+      font-size: 16px;
+      margin-bottom: 0.5rem;
+    }
+
+    br {
+      margin-bottom: 0.5rem;
+    }
+
+    li {
+
+      margin-bottom: 1rem;
+
+      @media (min-width: 1200px) {
+      margin-bottom: 1rem;
+
+      }
+    }
+
+    a{
+      line-height: 16px;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__social-links {
+    color: white;
+    justify-content: center;
+    // text-align: center;
+  
+
+    .template-partial-footer__social-links-list {
+      flex-direction: row;
+      display: flex;
+      // justify-content: center;
+
+      .social-media-link {
+        margin-right: 1.2rem;
+        
+      }
+
+      .social-icon {
+
+        height: auto;
+        width: auto;
+
+        svg {
+        height: 20px !important;
+        width: 20px !important;
+        }
+      }
+
+      a {
+        // padding-left: 10px;
+        text-decoration: none;
+        color: white;
+
+      }
+
+    }
+
+    p {
+      line-height: 18px;
+      // margin-bottom: 1rem;
+    }
+  }
+}
+
+
+.menu-item-object-catalogue {
+
+  &:first-child  {
+
+    margin-bottom: 0 !important;
+  
+
+    @media (min-width: 1200px) {
+      margin-bottom: 1rem;
+    }
+  }
+
+}
+
+  .template-partial-footer__navigation-footer__title {
+
+    padding-bottom: 0.5rem;
+
+    @media (min-width: 1200px) {
+      padding-bottom: unset;
+      padding-top: 2rem;
+    }
+
+  }
+
+  .template-partial-footer__navigation-footer-list--catalogues > li:nth-of-type(2) {
+
+    margin-top: 1rem;
+
+    @media (min-width: 1200px) {
+    margin-top: 2rem;
+    }
+
+
+    a{
+
+      color: white !important;
+      font-weight: 500;
+      text-decoration: none;
+  
+  
+      @media (min-width: 1200px) {
+      color: white !important;
+      font-weight: 500;
+      text-decoration: underline;
+      }
+    }
+
+  }
+
+
+
+#menu-item-1067 {
+  a{
+
+    color: white !important;
+    font-weight: 500;
+    text-decoration: none;
+
+
+    @media (min-width: 1200px) {
+    color: white !important;
+    font-weight: 500;
+    text-decoration: underline;
+    }
+  }
+}

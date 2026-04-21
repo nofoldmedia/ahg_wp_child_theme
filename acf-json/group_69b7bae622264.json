@@ -1,0 +1,240 @@
+{
+    "key": "group_69b7bae622264",
+    "title": "Section Columns - 50\/50 image & text #1",
+    "fields": [
+        {
+            "key": "field_69b7bae6248f5",
+            "label": "Section Columns - 50\/50 image & text - Show\/hide",
+            "name": "f__section_columns_5050_image_text_show_hide",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Show": "Show",
+                "Hide": "Hide"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "allow_in_bindings": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_69b7bae6248fa",
+            "label": "Section Columns - 50\/50 image & text - Custom class name",
+            "name": "f__section_columns_5050_image_text_custom_class_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "\/\/ <-- *for the devs  You only need to add the style name e.g. 'registration form'. The directory structure 'scss-layout-styles\/scss-ls-registration-form.scss'",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "homepage-hero",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_69bab9fcf3aab",
+            "label": "Section Columns - 50\/50 image & text - image left group",
+            "name": "f__section_columns_5050_image_text_image_left_group",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_69b7bae624900",
+                    "label": "Section Columns - 50\/50 image & text - image left",
+                    "name": "f__section_columns_5050_image_text_image_left",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 1,
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_69baba62ec251",
+                    "label": "Section Columns - 50\/50 image & text - image left width in %",
+                    "name": "f__section_columns_5050_image_text_image_left_width",
+                    "aria-label": "",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 50,
+                    "min": "",
+                    "max": "",
+                    "allow_in_bindings": 0,
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_69b7bae6248fd",
+            "label": "Section Columns - 50\/50 image & text - text right group",
+            "name": "f__section_columns_5050_image_text_text_right_group",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_69b7bae6279ec",
+                    "label": "Section Columns - 50\/50 image & text - text right image caption",
+                    "name": "f__section_columns_5050_image_text_text_right_image_caption",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_69b7bae6279e2",
+                    "label": "Section Columns - 50\/50 image & text - text right",
+                    "name": "f__section_columns_5050_image_text_text_right",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 1,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22270"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22474"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22614"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22622"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22626"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22634"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22619"
+            }
+        ]
+    ],
+    "menu_order": 222,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1775110482
+}

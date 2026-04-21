@@ -1,0 +1,123 @@
+<?php
+/**
+ * Displays header site branding
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty_One
+ * @since Twenty Twenty-One 1.0
+ * 
+ * https://developer.wordpress.org/reference/functions/wp_nav_menu/
+ * 
+ */
+?>
+<?php 
+
+$var__helper_class_name   = 't-p-header';
+
+$registered_nav_menus = get_registered_nav_menus();
+
+if ( has_nav_menu( 'nav_primary' ) ) : 
+?>
+
+<?php /** Mobile navigation toggle control */
+?>
+<div class="template-partial-header__navigation-primary-search-toggle">
+
+    <svg id="Search_mag_glass" data-name="Search mag glass" xmlns="http://www.w3.org/2000/svg" width="28.061" height="28.061" viewBox="0 0 28.061 28.061">
+
+        <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#fff" stroke-width="3">
+            <circle cx="11" cy="11" r="11" stroke="none"/>
+            <circle cx="11" cy="11" r="9.5" fill="none"/>
+        </g>
+        
+        <line id="Line_1" data-name="Line 1" x2="10" y2="10" transform="translate(17 17)" fill="none" stroke="#fff" stroke-width="3"/>
+
+    </svg>
+
+</div>
+
+<div class="template-partial-header__navigation-primary-toggle-control">
+
+    <div class="t-p-header__navigation-primary-toggle-control-group">
+        
+        <div id="burger" class="burger burger-squeeze burger-menu">
+
+            <div class="burger-lines"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<nav class="template-partial-header__navigation-primary-group" style="flex: 1;" ria-label="<?php esc_attr_e( 'Navigation : Primary', 'vipond' ); ?>">
+
+<?php
+
+$primary_menu_name = 'nav_primary';
+
+$language_menu_name = 'nav_lang';
+
+// Get the menu locations registered in the theme
+$locations = get_nav_menu_locations();
+
+    if (isset($locations[$primary_menu_name])):
+
+        // Get the menu ID for the specified location
+        $primary_menu_id = $locations[$primary_menu_name];
+
+        // Get the menu items for the specified menu
+        $primary_menu_items = wp_get_nav_menu_items($primary_menu_id);
+
+        // Get the language menu items
+        $language_menu_items = [];
+        $current_language_item = null;
+        if (isset($locations[$language_menu_name])) {
+            $language_menu_id = $locations[$language_menu_name];
+            $language_menu_items = wp_get_nav_menu_items($language_menu_id);
+
+            // Determine the current language item based on the current URL
+            $current_url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+            foreach ($language_menu_items as $language_item) {
+                if (untrailingslashit($current_url) === untrailingslashit($language_item->url)) {
+                    $current_language_item = $language_item;
+                    break;
+                }
+            }
+        }
+
+        // Default current language item if not found
+        if (!$current_language_item && !empty($language_menu_items)) {
+            $current_language_item = $language_menu_items[0];
+        }
+
+        // Define arguments for wp_nav_menu
+        $args = array(
+            'menu'              => $primary_menu_name,
+            'theme_location'    => $primary_menu_name,
+            'menu_class'        => 'template-partial-header__navigation-primary-list',
+            'container'         => false,
+            'walker'            => new Custom_Nav_Walker($language_menu_items, $current_language_item),
+            'fallback_cb'       => false,
+        );
+
+        // Display the menu using wp_nav_menu with defined arguments
+        wp_nav_menu($args);
+
+    else :
+
+        echo 'Menu not found!';
+
+    endif;
+
+?>
+
+</nav>
+
+<?php
+else:
+
+    echo ('test 3');
+
+endif;
+?>

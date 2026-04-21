@@ -1,0 +1,121 @@
+{
+    "key": "group_6929b81fb6902",
+    "title": "Section Columns - 50\/50 text #1",
+    "fields": [
+        {
+            "key": "field_6929b81fb827d",
+            "label": "Section : Columns 5050 text - Show\/hide",
+            "name": "f__section_columns_5050_text_show_hide",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Show": "Show",
+                "Hide": "Hide"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "allow_in_bindings": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6929b81fb8281",
+            "label": "Section : Columns 5050 text - Custom class name",
+            "name": "f__section_columns_5050_text_custom_class_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "\/\/ <-- *for the devs  You only need to add the style name e.g. 'registration form'. The directory structure 'scss-layout-styles\/scss-ls-registration-form.scss'",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "homepage-hero",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6929b81fb8284",
+            "label": "Section : Columns 5050 text - left",
+            "name": "f__section_columns_5050_text_left",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6929b9666eeaa",
+            "label": "Section : Columns 5050 text - right",
+            "name": "f__section_columns_5050_text_right",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22270"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "22639"
+            }
+        ]
+    ],
+    "menu_order": 222,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1765377862
+}

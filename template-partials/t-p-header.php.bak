@@ -1,0 +1,104 @@
+<?php
+/**
+ * The header.
+ *
+ */
+
+?>
+
+<?php
+
+
+// :: Helper class name
+
+$var__helper_class_name   = 't-p-header';
+
+?>
+
+<body <?php body_class(); ?>>
+
+	<?php wp_body_open(); ?>
+
+    
+	<?php
+	// Header
+	// ------
+	?>		
+	<header class="<?= $var__helper_class_name ?>">
+
+		<?php
+		// Scaffolding : Container
+		// -----------------------
+		?>	
+		<div class="scaffolding-container">
+
+			<?php
+			// Scaffolding : Row
+			// -----------------
+			?>		
+			<div class="scaffolding-row">			
+
+				<?php
+				// Skip Link
+				// ---------
+				?>	
+				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'twentytwentyone' ); ?></a>
+				<?php
+				// /Skip Link
+				// ==========
+				?>	
+
+				<?php
+				// Template partial header : Group
+				// -------------------------------
+				?>	
+				<div class="<?= $var__helper_class_name ?>__group">
+									
+					<?php
+					// Header : Branding
+					// -----------------
+					?>	
+
+					<?php get_template_part( 'template-partials/' . $var__helper_class_name . '__site-branding' ); ?>
+					
+                    <?php
+					// /Header : Branding
+					// ==================
+					?>	
+
+					<?php
+					// Navigation : Primary
+					// --------------------
+					?>
+
+					<?php get_template_part( 'template-partials/' . $var__helper_class_name . '__navigation-primary' ); ?> 
+					
+                    <?php
+					// /Navigation : Primary
+					// =====================
+					?>
+                    
+				</div>
+				<?php
+				// /Template partial header : Group
+				// ================================
+				?>					
+
+			</div>
+			<?php
+			// /Scaffolding : Row
+			// ==================
+			?>
+
+		</div>
+		<?php
+		// /Scaffolding : Container
+		// ========================
+		?>	
+
+	</header>
+	<?php
+	// /Header
+	// =======
+	?>		
+

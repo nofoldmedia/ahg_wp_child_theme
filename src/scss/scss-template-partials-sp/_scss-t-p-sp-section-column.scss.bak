@@ -1,0 +1,53 @@
+@use "../scss-mixins";
+@use "../scss-abstracts";  
+@use "../_scss-ab-fonts--sp";
+
+.tp-sp-section-column,
+.column
+{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem;
+    box-sizing: border-box;
+    
+    &__40{
+
+        // :: Resource : https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number
+        flex-basis: 40%
+
+    }
+
+    &__50 {
+        
+        flex-basis: 50%;
+
+        &--bgd-image-tile {
+
+            padding: 0;
+            min-height: 40dvh;
+
+        }
+
+    }
+
+    &__60 {
+        
+        flex-basis: 60%;
+
+    }
+
+    &__100 {
+        
+        flex-basis: 100%;     
+        
+        &--hero {
+
+            justify-content: center;
+
+        }        
+
+    }    
+
+}

@@ -1,0 +1,61 @@
+ {
+    "key": "form_65d4b621a53ae",
+    "title": "Template Form Master Framework Contract",
+    "display": {
+        "description": "",
+        "success_message": ""
+    },
+    "create_entries": true,
+    "restrictions": {
+        "entries": false,
+        "user": false,
+        "schedule": false,
+        "edit_own_posts": false
+    },
+    "emails": false,
+    "editing": {
+        "user": false,
+        "post": false,
+        "term": false
+    },
+    "slack": false,
+    "mailchimp": false,
+    "zapier": false,
+    "recaptcha": false,
+    "calculated": {
+        "field_65b2491875bbc": "<p>{field:please_rename_the_doc}<\/p>\n",
+        "field_65b8b9c39384e": "<p>{field:input_company_name}, Master Services Agreement<\/p>\n",
+        "field_65b8b9e4bbca4": "<p>{field:input_company_name}. All rights reserved. {field:date_first}<\/p>\n",
+        "field_65b2423dfc838": "<p><span class=\"text-highlight-two\">{field:input_company_name}<\/span> Limited is a [company\/business] which provides various technology based services [and\/or software]. This Master Services Contract (MSC) comprises of the terms and conditions contained in this MSC, together with the Contract Details page and each of the Schedules which are relevant to the Software and\/or Services You purchase through Us. Each time You purchase Software and\/or Services through Us, We shall agree with You in writing an [Order Form and\/or a Change Control Note] setting out the details of the Software and\/or Services You are to acquire. If You proceed with such purchase the terms of this MSC and the relevant Schedule(s) shall apply to the additional Software and\/or Services You have acquired. If necessary, We may update the Contract Details page to include any information which is relevant to future purchases You make. We shall agree such updates with You in writing.<\/p>\n",
+        "field_65b24479ca0e9": "<p><strong>Contract Details<\/strong><\/p>\n<table class=\"tg\">\n<thead>\n<tr>\n<td class=\"tg-0lax\">Customer Name:<\/td>\n<td class=\"tg-0lax\">{field:please_insert_customer_name}<\/td>\n<\/tr>\n<\/thead>\n<tbody>\n<tr>\n<td class=\"tg-0lax\">Customer Registration Number:<\/td>\n<td class=\"tg-0lax\">{field:input_customer_registered}<\/td>\n<\/tr>\n<tr>\n<td class=\"tg-0lax\">Customer registered office address (and main place of business if different from registered office address):<\/td>\n<td class=\"tg-0lax\">\n<table class=\"nested-table\">\n<tbody>\n<tr>\n<td>{field:input_company_reg_address}<\/td>\n<td>{field:input_customer_trading_address}<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/td>\n<\/tr>\n<tr>\n<td class=\"tg-0lax\">Start Date:<\/td>\n<td class=\"tg-0lax\">{field:date_first}<\/td>\n<\/tr>\n<tr>\n<td class=\"tg-0lax\">Software:<\/td>\n<td class=\"tg-0lax\">As set out in the relevant Order Form and\/or Change<\/td>\n<\/tr>\n<tr>\n<td class=\"tg-0lax\">Services:<\/td>\n<td class=\"tg-0lax\">As set out in the relevant Order Form and\/or Change<\/td>\n<\/tr>\n<tr>\n<td class=\"tg-0lax\">Special terms:<\/td>\n<td class=\"tg-0lax\">{field:va_f_one}<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<p><span class=\"page-break\"><\/div>\n",
+        "field_65b2441142923": "<p><strong>Please sign below to confirm you have read, understand and accept the terms of the Master Services Contract.<\/strong><\/p>\n<table class=\"tg\">\n<thead>\n<tr>\n<td class=\"tg-0lax\">\n<p><strong>Signed by&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;<\/strong><\/p>\n<p><strong>an authorised signatory for and on behalf of {field:please_insert_customer_name}<\/strong><\/p>\n<\/td>\n<td class=\"tg-0lax\">\n<p><strong>Signed by&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;<\/strong><\/p>\n<p><strong>an authorised signatory for and on behalf of {field:input_company_name}<\/strong><\/p>\n<\/td>\n<\/tr>\n<\/thead>\n<tbody>\n<tr>\n<td class=\"tg-0lax\">\n<p>Name&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;..<\/p>\n<\/td>\n<td class=\"tg-0lax\">\n<p>Name&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;..<\/p>\n<\/td>\n<\/tr>\n<tr>\n<td class=\"tg-0lax\">\n<p>Date&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;..<\/p>\n<\/td>\n<td class=\"tg-0lax\">\n<p>Date&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;..<\/p>\n<\/td>\n<\/tr>\n<\/tbody>\n<div class=\"page-break\"><\/span><\/p>\n",
+        "field_65b244a12dd04": "<p><strong>The Conditions<\/strong><\/p>\n<p><strong>1. INTERPRETATION<\/strong><\/p>\n<p>1.1 The definitions and rules of interpretation in this clause apply in the Contract.<\/p>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Affiliate;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>in relation to a party, any entity controlling, controlled by or under common control with such party and \u201ccontrol\u201d shall have the meaning given to it in section 1124 of the Corporation Tax Act 2010.  <\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Change;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>any change both of Us agree in writing to make to the Software and\/or Services.<br \/>\nthese conditions.<\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Confidential Information;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>information belonging to or relating to a party\u2019s business which is identified as confidential information or which might reasonably be considered confidential given the circumstance of its disclosure or use, including (but not limited to) any documents We produce for You as part of the Professional Services.<\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Contract Details;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>the Contract Details page at the beginning of this Contract. <\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Contract;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>the Contract made between You and Us for provision of Software and\/or the Services, comprising these Conditions, the Contract Details, the Schedule(s) which are relevant to the Software and\/or Services purchased by You from Us, the Order Form(s) and where applicable, any Change.<\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Controller, processor, data subject, personal data, personal data breach, processing and appropriate technical and organisational measures;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>as defined in the Data Protection Legislation.<\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Customer Data;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>the data supplied by You to Us for the purpose of the providing the Software, and\/or Services.<\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Data Protection Legislation;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>means:<\/p>\n<p>(a) to the extent that the UK GDPR applies, the law of the United Kingdom or of a part of the United Kingdom which relates to the protection of personal data.<\/p>\n<p>(b) to the extent that the EU GDPR applies, the law of the European Union or any member state of the European Union to which We or You are subject which relates to the protection of personal data.<\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Deliverables;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>the deliverables described in the Statement of Work and\/or a Change which We create for You as a result of the Professional Services.<\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>EU GDPR;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>the General Data Protection Regulation ((EU) 2016\/679), as it has effect in EU law. <\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Fees;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>the fees payable by You to Us for the Software and\/or Services, as set out in the Order Form and\/or a Change.<\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Hosting Services;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>any hosting services provided by Us to You, subject to these Conditions and the terms of Schedule 4.<\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>Intellectual Property Rights;<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>all patents, copyright and related rights, trade marks, business names, rights goodwill, the right to sue for passing off, rights in designs, database rights, rights to use and protect the confidentiality of Confidential Information (including know-how) and all other intellectual property rights, registered or unregistered, which exist now or in the future in any part of the world. <\/p>\n<\/div>\n<\/div>\n<div style=\"display:flex;\">\n<div style=\"width: 30%; display: inline-block;\">\n<p><strong>{field:input_order_form};<\/strong><\/p>\n<\/div>\n<div style=\"width: 70%; display: inline-block;\">\n<p>An {field:input_order_form} agreed by both of us in writing confirming the Services and\/or Software to be supplied by Us to You under such {field:input_order_form}, and the Fees payable for such Services \/ Software. <\/p>\n<\/div>\n<\/div>\n",
+        "field_65b244b9655e2": "",
+        "field_65b244d4e0513": "",
+        "field_65b2450c7a688": "",
+        "field_65b245271b5d7": "",
+        "field_65b24545c1147": "",
+        "field_65b24560cc0b2": "",
+        "field_65b245791fc7d": "",
+        "field_65d5d92626981": "",
+        "field_65d5d94e64dea": "",
+        "field_65d5d98145200": "",
+        "field_65d5d99a18a24": "",
+        "field_65d5da28885ef": "",
+        "field_65d5da470ccd4": "",
+        "field_65d5da5e84537": "",
+        "field_65d5da7b5dd77": "",
+        "field_65d5da9c78d39": "",
+        "field_65d5dabec226c": "",
+        "field_65d5daeaad4ca": "",
+        "field_65d5db157d588": "",
+        "field_65d5dbb1b006e": "",
+        "field_65d5dbcd80b4a": "",
+        "field_65d5dbee27e00": "",
+        "field_65d5dc16549dd": "",
+        "field_65d5dc2fc794a": "",
+        "field_65d5dc4ed0211": "",
+        "field_65d5dc699eae3": "",
+        "field_65d5dc82ebef5": ""
+    }
+}

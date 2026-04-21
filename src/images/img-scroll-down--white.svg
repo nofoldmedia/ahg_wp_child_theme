@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="120.504" viewBox="0 0 39 120.504">
+  <g id="Group_164" data-name="Group 164" transform="translate(6426.806 8475)">
+    <g id="Group_163" data-name="Group 163" transform="translate(-19.805 252)">
+      <g id="Rectangle_207" data-name="Rectangle 207" transform="translate(-6407 -8727)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="39" height="62" rx="19" stroke="none"/>
+        <rect x="1" y="1" width="37" height="60" rx="18" fill="none"/>
+      </g>
+      <g id="Rectangle_208" data-name="Rectangle 208" transform="translate(-6389 -8715)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="4" height="11" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="2" height="9" rx="1" fill="none"/>
+      </g>
+    </g>
+    <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M19.387,21.786,29.365,11.8a1.878,1.878,0,0,1,2.663,0,1.9,1.9,0,0,1,0,2.671L20.723,25.785a1.882,1.882,0,0,1-2.6.055L6.737,14.48A1.886,1.886,0,1,1,9.4,11.808Z" transform="translate(-6426.993 -8410.083)" fill="#fff"/>
+    <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M19.387,21.786,29.365,11.8a1.878,1.878,0,0,1,2.663,0,1.9,1.9,0,0,1,0,2.671L20.723,25.785a1.882,1.882,0,0,1-2.6.055L6.737,14.48A1.886,1.886,0,1,1,9.4,11.808Z" transform="translate(-6427.188 -8380.831)" fill="#fff"/>
+  </g>
+</svg>

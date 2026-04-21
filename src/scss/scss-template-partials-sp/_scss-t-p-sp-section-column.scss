@@ -1,0 +1,135 @@
+@use "../scss-mixins";
+@use "../scss-abstracts";  
+
+// .column {
+
+//     border: 10px solid orange;
+
+// }
+
+.tp-sp-section-column {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+
+    @include  scss-mixins.for-size(desktop-up) {
+
+        padding: 5.5rem;
+
+    }
+
+    &--bgd-overlay:after{
+
+        content: "";
+        background-color: #21404a61;
+        opacity: .4;
+        position: absolute;
+        height: 100%;
+        width: 100%;   
+        top:0;    
+        left:0; 
+
+    }     
+
+    // &--bgd-image-tile {
+
+    //     padding: 0;
+    //     min-height: 15dvh;
+
+    //     @include  scss-mixins.for-size(desktop-up) {
+
+    //         min-height: 40dvh;
+    //         min-height: 470px;
+
+    //     }
+
+    // }
+
+    &__40{
+
+        // :: Resource : https://stackoverflow.com/questions/43691890/css-flexbox-max-column-number
+        flex-basis: 40%
+
+    }
+
+    &__25 {
+        
+        flex-basis: 50%;
+
+        @include  scss-mixins.for-size(desktop-up) {
+
+            flex-basis: 25%;
+            height: 300px;
+
+        }
+        
+    }
+
+    &__50 {
+        
+        flex-basis: 50%;
+        justify-content: center;
+
+        &--bgd {
+
+            flex: 1;
+            // background-size: cover;
+
+        }
+
+        &--bgd-image-tile {
+
+            padding: 0;
+            min-height: 25dvh;
+
+            @include  scss-mixins.for-size(desktop-up) {
+
+                min-height: 40dvh;
+                min-height: 470px;
+
+            }
+
+        }
+
+        &--cta {
+
+            padding: 5.5rem;
+
+            &-link {
+
+                text-decoration: none;
+
+            }
+
+        }
+
+    }
+
+    &__60 {
+        
+        flex-basis: 60%;
+
+    }
+
+    &__100 {
+        
+        flex-basis: 100%;     
+        
+        &--hero {
+
+            justify-content: center;
+
+        }        
+
+    }  
+    
+    &__header {
+
+        padding: 0 1rem;
+
+    }
+
+}

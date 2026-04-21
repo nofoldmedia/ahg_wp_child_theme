@@ -1,0 +1,109 @@
+@use "../scss-mixins";
+@use "../scss-abstracts";  
+
+.tp-sp-section-column-content,
+.column-content 
+{
+
+    // border: 10px solid red;
+    box-sizing: border-box;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__bgd{
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        flex: 1;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        // BGD Overlay tint
+        &::after{
+
+            // content: "";
+            // background-color: #21404a61;
+            // opacity: .4;
+            // position: absolute;
+            // height: 100%;
+            // width: 100%;   
+            // top:0;     
+
+        }   
+        
+        // &-overlay:after{
+
+        //     content: "";
+        //     background-color: #21404a61;
+        //     opacity: .4;
+        //     position: absolute;
+        //     height: 100%;
+        //     width: 100%;   
+        //     top:0;     
+
+        // }  
+
+    }
+
+    &__text {
+
+        flex: 1;
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        &--hero {
+
+            color: #fff;
+
+        }
+
+    }
+
+}
+
+// :: Note : Special case due to hireachy - need to pick focus from parent container
+.tp-sp-section-column {
+
+    // &:hover{
+
+    //     .tp-sp-section-column-content__bgd:after{
+
+    //         opacity: 0;
+
+    //     }
+
+    // }
+
+}
+
+.title {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;  
+    // background-color: red; 
+    // @extend .ff-montserrat__normal--latin-400;
+
+    &-medium{
+
+        position: relative;
+
+    }
+
+}   

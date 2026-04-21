@@ -1,0 +1,112 @@
+// :: SCSS : Header
+
+@use "../scss-mixins";
+// @use "../scss-abstracts";
+
+header,
+.t-p-header {
+
+    // background-color: #1d1d1b;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+
+    &__site-logo {
+
+        background: #bdd7e36e;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #fff;
+
+    }
+
+    &__blog-info {
+
+        position: absolute;
+        left: -999999px;
+        opacity: 0;
+
+    }
+
+    &__account-link-icon {
+
+        display: flex;
+        cursor: pointer;    
+        width: 20px;   
+
+        @include scss-mixins.for-size(tablet-landscape-up--larger) {
+
+            width: 34px;    
+
+        }
+
+    }
+
+    .skip-link {
+
+        display: none;
+
+    }
+
+    &__group {
+
+        display: flex;
+        height: 76px;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        gap: 1rem;
+        display: flex;
+        flex-direction: row;
+
+        @include scss-mixins.for-size(tablet-landscape-up) {
+
+            padding: 0 1rem;      
+
+        }
+
+        &:after {
+
+            content:'';
+            position: absolute;
+            width: 200vw;
+            left: -50vw;
+            top: 76px;
+            top:0;
+            // height: 1px;
+            height: 100%;;
+            background-color: #000000;
+            z-index: -1000;
+            opacity: .2;
+            transition: opacity 1s;
+        }
+
+        &.darken {
+
+        &:after {
+
+            opacity: .6;
+
+        }
+
+    }
+
+        @include scss-mixins.for-size(tablet-landscape-up--larger) {
+
+            flex-direction: row;
+
+        }
+
+        @include scss-mixins.for-size(tablet-ipad-pro-landscape-up){
+            
+            gap: 3rem;            
+
+        }
+
+    }
+
+}

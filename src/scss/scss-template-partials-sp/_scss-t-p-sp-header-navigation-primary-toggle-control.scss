@@ -1,0 +1,172 @@
+// :: SCSS : Header
+@use "../scss-abstracts";
+@use "../scss-mixins";
+
+.t-p-header{
+
+  &__navigation-primary-toggle-control {
+    
+    // background-color: red;
+    
+    @include scss-mixins.for-size(tablet-landscape-up--larger) {
+      
+      display: none;
+
+    }
+
+    .burger {
+
+      height: 25px;
+      width: 25px;
+      position: relative;
+      font-size: 12px;
+      cursor: pointer;
+      transition: 0.2s all;
+      // -webkit-tap-highlight-color: transparent;
+
+    }
+
+    .burger .burger-lines:after {
+      
+      left: 0;
+      top: -10px;
+
+    }
+
+    .burger .burger-lines:before {
+      
+      left: 0;
+      top: 10px;
+
+    }
+
+    .burger:after {
+      
+      content: "";
+      display: block;
+      position: absolute;
+      height: 150%;
+      width: 150%;
+      top: -25%;
+      left: -25%;
+
+    }
+
+    .burger .burger-lines {
+      
+      top: 50%;
+      margin-top: -0.125em;
+
+    }
+
+    .burger .burger-lines,
+    .burger .burger-lines:after,
+    .burger .burger-lines:before {
+      
+      pointer-events: none;
+      display: block;
+      content: "";
+      width: 100%;
+      border-radius: 0.25em;
+      background-color: white;
+      background-color: #fff;
+      // background-color: red;
+      height: 0.25em;
+      position: absolute;
+      -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+      transform: rotate(0);
+
+    }
+
+    .burger .burger-lines:after {
+      
+      left: 0;
+      top: -10px;
+
+    }
+
+    .burger .burger-lines:before {
+      
+      left: 0;
+      top: 10px;
+
+    }
+
+    .burger.burger-squeeze .burger-lines,
+    .burger.burger-squeeze .burger-lines:after,
+    .burger.burger-squeeze .burger-lines:before {
+      
+      -webkit-transition: 0.2s top 0.2s, 0.1s left, 0.2s transform,
+        0.4s background-color 0.2s;
+      -o-transition: 0.2s top 0.2s, 0.1s left, 0.2s transform,
+        0.4s background-color 0.2s;
+      transition: 0.2s top 0.2s, 0.1s left, 0.2s transform,
+        0.4s background-color 0.2s;
+
+    }
+
+    .burger.burger-squeeze .burger-lines:after,
+    .burger.burger-squeeze .burger-lines:before {
+      
+      width: 25px;
+
+    }
+
+    .burger.burger-squeeze.open .burger-lines,
+    .burger.burger-squeeze.open .burger-lines:after,
+    .burger.burger-squeeze.open .burger-lines:before {
+      
+      -webkit-transition: 0.2s background-color, 0.2s top, 0.2s left,
+        0.2s transform 0.15s;
+      -o-transition: 0.2s background-color, 0.2s top, 0.2s left,
+        0.2s transform 0.15s;
+      transition: 0.2s background-color, 0.2s top, 0.2s left, 0.2s transform 0.15s;
+
+    }
+
+    .burger.burger-squeeze.open .burger-lines {
+      
+      background-color: transparent;
+
+    }
+
+    .burger.burger-squeeze.open .burger-lines:before,
+    .burger.burger-squeeze.open .burger-lines:after {
+      
+      left: 0;
+      top: 0px;
+
+    }
+
+    .burger.burger-squeeze.open .burger-lines:before {
+      
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+
+    }
+
+    .burger.burger-squeeze.open .burger-lines:after {
+      
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+
+    }
+
+  }
+
+  .navbgd {
+   
+    background-color: rgba(43, 43, 43, 0.75);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+  }
+
+}
